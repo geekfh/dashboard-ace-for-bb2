@@ -1,0 +1,45 @@
+{
+  "tags": {
+	"allowUnknownTags": true
+  },
+  "source": {
+	"include": [
+	  "README.md",
+	  "assets/scripts/app.js",
+	  "assets/scripts/context.js",
+	  "assets/scripts/fwk/factory",
+	  "app/demo/module-main.js"
+	],
+	"exclude": [],
+	"includePattern": ".+\\.js(doc|x)?$",
+	"excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+	"cleverLinks": false,
+	"monospaceLinks": false,
+	"default": {
+	  "outputSourceFiles" : true
+	},
+	"applicationName": "Assets.js",
+	"meta": {
+	  "title": "Assets.js - API Document",
+	  "description": "统一运管平台基础前端框架",
+	  "keyword": "assets, oms, hefeng, iBoxpay"
+	},
+	"linenums": true
+  },
+  "opts": {
+	"template": "templates/jaguarjs",
+	"encoding": "utf8",
+	"destination": "./docs",
+	"recurse": true,
+	"query": "value",
+	"private": true,
+	"lenient": true
+  },
+  "markdown": {
+	"parser": "gfm",
+	"hardwrap": true
+  }
+}

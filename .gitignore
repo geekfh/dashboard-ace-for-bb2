@@ -1,0 +1,15 @@
+# Created by http://www.gitignore.io
+
+### dist ###
+dist/
+
+### SVN ###
+.svn/
+*.project
+*.classpath
+
+## .gitignore for intellij
+*.iml
+*.ipr
+*.iws
+.idea/

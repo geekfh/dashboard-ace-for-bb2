@@ -1,0 +1,89 @@
+{
+    // JSHint Default Configuration File (as on JSHint website)
+    // See http://jshint.com/docs/ for more details
+    //jshint options document: [http://jshint.com/docs/options/#strict](http://jshint.com/docs/options/#strict)
+
+    "maxerr"        : 50,       // {int} 超过{int}个错误后，停止检测错误
+
+    // Enforcing
+    "bitwise"       : false,    // true: 禁止使用位逻辑符 (&, |, ^, ...)
+    "camelcase"     : false,    // true: 变量名必须是驼峰风格
+    "curly"         : true,     // true: 必须用 {} 包住代码块或者某个作用域 （if/while... 后面）
+    "eqeqeq"        : false,    // true: 所有比较都需要用强等于的方式（=== / !==）
+    "es3"           : true,     // true: 遵循ECMAScript 3，避免出现 ES 5/6 的语法，兼容老的浏览器
+    "forin"         : true,     // true: 再用 for..in 遍历的时候必须带上 obj.hasOwnProperty()
+    "freeze"        : true,     // true: 禁止重写原生对象的prototype (如，Array.prototype={})
+    "immed"         : false,    // true: 对于执行匿名函数，必须在最外层括号一把。例如， `(function () { } ());`
+    "indent"        : 4,        // {int} 一个tab缩进代表多少个空格
+    "latedef"       : false,    // true: 变量须先声明在使用
+    "newcap"        : true,     // true: 构造方法必须大写开头
+    "noarg"         : true,     // true: 禁止使用 `arguments.caller` and `arguments.callee`
+    "noempty"       : true,     // true: 禁止使用空代码块，如if(xx) {//这是空代码块}
+    "nonbsp"        : true,     // true: 禁止使用 "non-breaking whitespace" 符号，mac的 options + space是个非换行空白符，对于非UTF8的页面会换行
+    "nonew"         : true,     //true: 要求"new 构造函数"必须赋值给一个变量
+    "plusplus"      : false,    // true: 禁止使用 `++` & `--`
+    "quotmark"      : false,    // 对于 使用单引号/双引号 的一致性
+    //   false    : 不管
+    //   true     : 某个文件的单双引号要保持一致
+    //   "single" : 只能单
+    //   "double" : 只能双
+    "undef"         : true,     // true: 要求非全局变量需要先声明
+    "unused"        : true,     // true: 要求所有声明的变量都要用上
+    "strict"        : true,     // true: 方法体内遵循 ECMAScript 5 的 strict mode
+    "maxparams"     : false,    // {int} 方法的参数个数最多允许 {int} 个
+    "maxdepth"      : false,    // {int} （逻辑）代码块嵌套不能超过 {int} 层 if(x){while(x){//这是第二层}}
+    "maxstatements" : false,    // {int} 方法内的语句不能超过 {int} 条，一个方法算一条语句
+    "maxcomplexity" : false,    // {int} 方法内，关联的语句不能超过 {int} 行
+    "maxlen"        : false,    // {int} 每行代码不超过 {int} 个字符
+
+    // Relaxing
+    "asi"           : false,     // true: 容忍语句结尾不打分号
+    "boss"          : false,     // true: 容忍比较表达式出现赋值语句，如if(a=true){}
+    "debug"         : false,     // true: 允许用 debugger 打断点
+    "eqnull"        : false,     // true: 容忍使用 `== null`
+    "es5"           : false,     // true: 允许 ES5 语法 (例如: getters and setters)
+    "esnext"        : false,     // true: 允许 ES.next (ES6) 语法 (例如: `const`)
+    "moz"           : false,     // true: 允许 Mozilla 独有的语法 (extends and overrides esnext features)
+    // (ex: `for each`, multiple try/catch, function expression…)
+    "evil"          : true,      // true: 容忍使用 `eval` and `new Function()`
+    "expr"          : true,      // true: 容许表达式作为语句，例如 xxx() && yyy();
+    "funcscope"     : false,     // true: 容忍在控制语句内声明变量，如 for(var i = 0, ...)
+    "globalstrict"  : false,     // true: 允许 "use strict" 对全局生效， `strict` 配置原本只支持方法
+    "iterator"      : false,     // true: 容忍使用 `__iterator__` 属性
+    "lastsemic"     : false,     // true: 容忍忽略一行代码块的结尾分号,如 if(x){alert('aa')}
+    "laxbreak"      : false,     // true: 容忍不安全的换行，如，return之后立刻换行
+    "laxcomma"      : true,      // true: 容忍写map的时候，逗号放在key的前面，但是我们不要这样写，方便看第三方代码而已
+    "loopfunc"      : false,     // true: 容忍循环内定义方法
+    "multistr"      : false,     // true: 容忍多行的字符串（定义字符串时，在中间敲入回车）
+    "noyield"       : false,     // true: 容忍 generator 方法内不带 yield 语句
+    "notypeof"      : false,     // true: 容忍不合法的typeof值，如 if(typeof a === 'hello')
+    "proto"         : false,     // true: 容忍使用`__proto__` 属性
+    "scripturl"     : false,     // true: 使用scripts的url，如 <a href="javascript:void 0"></a>
+    "shadow"        : false,     // true: 容忍重定义变量
+    "sub"           : false,     // true: 容忍 obj['name'] 而不 obj.name
+    "supernew"      : false,     // true: 容忍 `new function () { ... };` and `new Object;`
+    "validthis"     : false,     // true: 容忍非构造方法内使用 `this` (只针对strict mode)
+
+    // Environments 识别对应环境，兼容一些全局变量等...
+    "browser"       : true,     // 支持浏览器宿主变量 (window, document, etc)
+    "browserify"    : false,    // Browserify (node.js code in the browser)
+    "couch"         : false,    // CouchDB
+    "devel"         : true,     // Development/debugging (alert, confirm, etc)
+    "dojo"          : false,    // Dojo Toolkit
+    "jasmine"       : false,    // Jasmine
+    "jquery"        : true,     // jQuery
+    "mocha"         : true,     // Mocha
+    "mootools"      : false,    // MooTools
+    "node"          : false,    // Node.js
+    "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
+    "prototypejs"   : false,    // Prototype and Scriptaculous
+    "qunit"         : false,    // QUnit
+    "rhino"         : false,    // Rhino
+    "shelljs"       : false,    // ShellJS
+    "worker"        : false,    // Web Workers
+    "wsh"           : false,    // Windows Scripting Host
+    "yui"           : false,    // Yahoo User Interface
+
+    // 声明一些 全局变量/全局方法，避免报错
+    "globals"       : { "_": false, "Backbone":false, "Marionette": false, "define": false, "Ctx": false, "App": false, "Opf": false ,"url": false}
+}
