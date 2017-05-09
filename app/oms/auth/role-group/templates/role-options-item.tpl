@@ -1,0 +1,1 @@
+<div class="add-item" title="<%= name %>"><%- name %></div>

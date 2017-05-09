@@ -1,0 +1,1 @@
+<li>snNo: <%= snNo %></li>
