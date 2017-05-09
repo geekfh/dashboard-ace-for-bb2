@@ -14,15 +14,15 @@
 
         // 打包过程会直接拷贝webapp下的某些目录
         // 这里配置排除已经复制的目录
-        excludeFolder: ['assets', 'app', 'onestation', 'third-party'],
+        excludeFolder: ['assets', 'app', '.git', 'dist', 'build', 'docs', 'templates'],
 
         /******** 前端框架 ********/
         fwk: {
             // APP根目录
-            srcRoot: '../../path/to/src/main/webapp',
+            srcRoot: '../../',
 
             // APP输出根目录
-            distRoot: '../../path/to/src/main/webapp-dist',
+            distRoot: '../../dist',
 
             // 压缩后的模板文件名
             allTplFileName: 'fwk-tpl.all.js',
@@ -63,9 +63,7 @@
             copyTask: [
                 {src:'assets/fonts/**', dest:'assets/fonts'},
                 {src:'assets/images/**', dest:'assets/images'},
-                {src:'third-party/**', dest:'third-party'},
-                {src:'youworthit.html', dest:'./'},
-                {src:'favicon.ico', dest:'./'}
+                //{src:'third-party/**', dest:'third-party'}
             ]
         },
 
@@ -95,8 +93,8 @@
 
             // 运营管理
             demo: {
-                srcRoot: '../../path/to/src/main/webapp',
-                distRoot: '../../path/to/src/main/webapp-dist'
+                srcRoot: '../../',
+                distRoot: '../../dist'
             }
         }
     };

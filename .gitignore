@@ -1,7 +1,8 @@
 # Created by http://www.gitignore.io
 
-### dist ###
+### webapp ###
 dist/
+**/node_modules/**
 
 ### SVN ###
 .svn/
