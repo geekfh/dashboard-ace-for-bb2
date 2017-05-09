@@ -1,0 +1,31 @@
+{
+  "colNames": {
+    "id": "ID",
+    "field1": "字段1",
+    "field2": "字段2",
+    "field3": "字段3"
+  },
+  "colModel": [
+    {
+      "name": "id",
+      "hidden": true
+    },
+    {
+      "name": "field1",
+      "width": 180,
+      "frozen": true,
+      "editable": true
+    },
+    {
+      "name": "field2",
+      "width": 180,
+      "frozen": true,
+      "editable": true
+    },
+    {
+      "name": "field3",
+      "width": 180,
+      "search": true
+    }
+  ]
+}

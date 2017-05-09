@@ -1,0 +1,11 @@
+.blacklist-dialog button {
+    width: 80px;
+    height: 32px;
+}
+.blacklist-dialog input {
+    width: 200px;
+}
+
+.blacklist-dialog select {
+    width: 150px;
+}

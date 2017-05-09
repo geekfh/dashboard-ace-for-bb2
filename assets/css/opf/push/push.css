@@ -1,0 +1,49 @@
+#editmodsm-record-table .upload-trigger {
+    position: relative;
+}
+
+.add-sm-form .phone-no {
+    width: 180px;
+    min-height: 30px;
+    line-height: 15px;
+    resize: none;
+}
+
+.add-sm-form .upload_container {
+    padding-left: 12px;
+}
+
+.add-sm-form .sm-content {
+    width: 180px;
+    min-height: 50px;
+    line-height: 15px;
+    resize: none;
+}
+
+.add-sm-form .sm-content-tip {
+    display: block;
+    padding-left: 5px;
+}
+
+.sm-detail .backgrid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sm-detail .backgrid th,
+.sm-detail .backgrid td {
+    height: 20px;
+    max-width: 250px;
+    padding: 4px 5px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.sm-detail .backgrid thead th a {
+    display: block;
+}

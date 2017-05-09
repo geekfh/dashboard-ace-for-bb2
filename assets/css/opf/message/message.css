@@ -1,0 +1,373 @@
+.select-label {
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.select-label input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.select-label span {
+    vertical-align: bottom;
+}
+
+
+/*上传XLS的样式*/
+.add-push-form .upload-file-trigger {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.add-push-form #textarea-content {
+    margin-left: 8px;
+}
+
+.add-push-form #input-content {
+    margin-left: 8px;
+}
+
+/*.add-push-form #input-content .http-Prdfix{
+    color: #bbb;
+    position: absolute;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 8px;
+    z-index: 10;
+}
+
+.add-push-form #input-content input {
+    padding-left: 55px;
+    z-index: 5;
+}*/
+
+.add-push-form .xlsFile-info {
+    display: inline-block;
+}
+
+.add-push-form .xlsFile-info .xlsFile-name {
+    font-size: 12px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.add-push-form .upload-group .btn-upload-file {
+    position: relative;
+    background: #428BCA;
+    font-size: 14px;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+.add-push-form .upload-group .btn-upload-file.upload-again {
+    text-decoration: underline;
+    display: inline-block;
+    background: white;
+    color: blue;
+    padding: 0;
+}
+
+.add-push-form .help-error {
+    margin-left: 6px;
+    display: block;
+}
+
+.add-push-form .CaptionTD {
+    width: 25%;
+}
+
+.add-push-form textarea {
+    min-height: 80px;
+    width: 100%!important;
+    max-width: 210px;
+}
+
+.add-push-form input[name="msgContent"] {
+    /*padding-left: 50px;*/
+}
+
+.add-push-form .timeSelect {
+    margin-left: 5px;
+}
+
+.add-push-form .timeSelect input {
+    width: 115px;
+    height: 30px;
+}
+
+.add-push-form .timeSelect select {
+    padding: 0;
+}
+
+.searchFilter .timeSelect {
+    margin-left: 5px;
+}
+
+.searchFilter .timeSelect input {
+    width: 115px;
+    height: 30px;
+}
+
+.searchFilter .timeSelect select {
+    padding: 0;
+}
+
+.message-perform-group {
+    padding: 20px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.message-perform-group .perform-content {
+    border-top: 1px dashed #ccc;
+    padding: 5px;
+}
+
+.message-perform-group .content-form-group {
+    display: inline-block;
+    width: 100%;
+    padding: 2px;
+}
+
+.message-perform-group .perform-result {
+    border-top: 1px dashed #ccc;
+    padding: 5px;
+}
+
+.message-perform-group .result-form-group {
+    display: inline-block;
+    width: 100%;
+    padding: 2px;
+}
+
+.message-perform-group .perform-label {
+    text-align: right;
+    padding-left: 0;
+}
+
+.message-perform-group .perform-value {
+    padding-left: 0;
+}
+
+.message-perform-group .perform-operate {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.message-perform-group .perform-desc {
+    width: 90%;
+    height: 100px;
+}
+
+.message-perform-group .perform-submit {
+    margin: 0 20px;
+    width: 100px;
+}
+
+.message-perform-group .perform-cancel {
+    margin: 0 20px;
+    width: 100px;
+}
+
+.message-perform-group .form-perform {
+    width: 100%;
+}
+
+.message-perform-group .download-xls {
+    cursor: pointer;
+}
+
+.msg-push-terminal-type {
+    margin-left: 15px;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.msg-push-terminal-type li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+
+.msg-push-terminal-type li button span {
+    display: block !important;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+
+.msg-push-terminal-type li button span.icon {
+    width: 32px;
+}
+
+.msg-push-terminal-type li button span.icon-msg-cashbox {
+    background: url("images/app_cashbox.png") scroll no-repeat 0 0;
+}
+
+.msg-push-terminal-type li button span.icon-msg-kaitongbao {
+    background: url("images/app_kaitongbao.png") scroll no-repeat 0 0;
+}
+
+.msg-push-terminal-type li button span.icon-msg-iboxpay {
+    background: url("images/app_iboxpay.png") scroll no-repeat 0 0;
+}
+
+.msg-push-terminal-type li button span.icon-msg-s300 {
+    background: url("images/app_s300.png") scroll no-repeat 0 0;
+}
+
+.msg-type-group {
+    padding: 10px;
+}
+
+.msg-type-group .edit-row {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.msg-type-group .text-label {
+    text-align: right;
+    line-height: 25px;
+}
+
+.msg-type-group .btn-add {
+    margin-right: 30px;
+    width: 100px;
+}
+
+.msg-type-group .btn-edit {
+    margin-right: 30px;
+    width: 100px;
+}
+
+.msg-type-group .btn-cancel {
+    margin-right: 30px;
+    width: 100px;
+}
+
+
+.msg-type-group .type-name {
+    width: 80%;
+}
+
+.msg-type-group .type-desc {
+    width: 80%;
+    height: 70px;
+}
+
+.msg-type-group .table-list {
+    width: 100%;
+}
+
+.msg-type-group td {
+    border: 1px solid #ccc;
+    padding: 5px 3px;
+}
+
+.msg-type-group th {
+    border: 1px solid #ccc;
+    padding: 5px 3px;
+}
+
+.msg-type-group table {
+    margin: 20px 0;
+}
+
+.msg-type-group .text-line {
+    color: #999;
+}
+
+.msg-type-group table>thead>tr>th:nth-of-type(1) {
+    width: 16%;
+}
+
+.msg-type-group table>thead>tr>th:nth-of-type(2) {
+    width: 36%;
+}
+
+.msg-type-group table>thead>tr>th:nth-of-type(3) {
+    width: 16%;
+}
+
+.msg-type-group table>thead>tr>th:nth-of-type(4) {
+    width: 16%;
+}
+
+.msg-type-group table>thead>tr>th:nth-of-type(5) {
+    width: 16%;
+}
+
+.ktb-news-group {
+
+}
+
+.ktb-news-group .content {
+    position: relative;
+    width: 100%;
+}
+
+.ktb-news-group .full-screen-img {
+    width: 100%;
+}
+
+.ktb-news-group .content .one {
+
+}
+
+.ktb-news-group .content .two {
+    
+}
+
+.ktb-news-group .content .tree {
+    
+}
+
+
+.ktb-news-group .content .three{
+    /*margin-top:26px;*/
+}
+.ktb-news-group .content .three div{
+    position: relative;
+}
+.ktb-news-group .content .three div img{
+    margin-left:1px;
+}
+
+.ktb-news-group .content .three a .img-button {
+    display: block;
+}
+.ktb-news-group .content .three a .img-hover {
+    display: none;
+}
+
+.ktb-news-group .content .three a:hover .img-button {
+    display: none;
+}
+.ktb-news-group .content .three a:hover .img-hover {
+    display: block;
+}
+
+/*.ktb-news-group .content .three .imagelink{
+    width:100%;
+    height:65px;
+    background: url("../../../images/ktb-news/button.png") no-repeat;
+    margin-top:10px;
+}
+.ktb-news-group .content .three .imagelink a{
+    display: block;
+    background-color:#ffffff;
+    width:100%;
+    height:65px;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+.ktb-news-group .content .three .imagelink:hover{
+    background-image: url("../../../images/ktb-news/button_press.png");
+}*/

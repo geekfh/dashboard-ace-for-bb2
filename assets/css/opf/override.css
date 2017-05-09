@@ -1,0 +1,424 @@
+/**************************************************/
+/****************  ace     **********************/
+/**************************************************/
+.nav-list > li > a > [class*="icon-"]:first-child {
+  position: relative;
+}
+
+.ipad .form-group input[disabled], 
+.ipad .form-group input:disabled {
+    color: #000 !important;
+    font-weight: bold;
+    background-color: rgb(242,242,242) !important;
+}
+/*“回到顶部”按钮始终在右下方*/
+.btn-scroll-up {
+    position: fixed !important;
+    right: 15px !important;
+    bottom: 20px !important;
+}
+@media only screen and (max-width: 320px){
+    .menu-toggler {
+         width: 52px;
+    }
+    .menu-toggler > .menu-text {
+        border-width: 9px 42px;
+        bottom: -18px;
+    }
+    .menu-toggler:before, .menu-toggler:after {
+        margin-top: 0px;
+    }
+}
+/*针对屏幕*/
+@media only screen and (max-width: 460px){
+
+    /*jquery ui dialog X按钮*/
+    .ui-dialog .ui-dialog-titlebar-close:before, 
+    .ui-jqdialog .ui-dialog-titlebar-close:before, 
+    .ui-dialog .ui-jqdialog-titlebar-close:before, 
+    .ui-jqdialog .ui-jqdialog-titlebar-close:before {
+        font-size: 22px!important;
+    }
+    #navbar .logo {
+        
+    }
+    .navbar .navbar-header.pull-right {
+        float: right !important;
+    }
+    .navbar .navbar-header.pull-left {
+        float: left !important;
+    }
+    .ace-nav {
+        background-color: transparent!important;
+        border: none !important;
+    }
+    .ace-nav > li:last-child {
+        border-right: none !important;
+    }
+    .ace-nav > li:first-child {
+        border-left: none !important;
+    }
+}
+@media only screen and (max-width: 991px) {
+
+    #navbar{
+        /*text-align: center;*/
+    }
+    #navbar .navbar-header.pull-left {
+        padding-left: 90px!important;
+    }
+    #menu-toggler {
+        height: 35px!important;
+        margin-top: -44px!important;
+    }
+    #sidebar {
+        margin-top: 0!important;
+    }
+    .menu-toggler > .menu-text:after {
+    }
+    
+    .page-header {
+        padding-bottom: 10px!important;
+        padding-top: 6px!important;
+    }
+}
+
+.page-header {
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+/*
+#main-container{
+    z-index: 930!important;
+    position: relative;
+}
+*/
+
+#menu-toggler {
+    z-index: 940!important;
+}
+#navbar {
+    z-index: 940!important;
+    border-bottom: 2px solid #2e6589;
+}
+
+#navbar .navbar-brand {
+  cursor: default;
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+#navbar .logo{
+    top: 6px;
+    font-size: 30px;
+    position: relative;
+}
+
+#brand-caption {
+    font-size: 18px;
+    line-height: 50px;
+    font-family: "Microsoft Yahei";
+}
+.page-content {
+}
+/*ace覆盖*/
+    /* 在文档流会影响pagecontent里子元素clear:left; */
+#sidebar {
+    position: absolute;
+    border-right-width: 2px;
+}
+#sidebar:before {
+    border-right-width: 2px;
+}
+
+#page-body>div>.row  {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+#page-body>div>.row .jgrid-container {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+/*为了规则部分暂时覆盖，左侧的边框还是需要的*/
+.tree:before {
+    border: none!important;
+}
+
+.tree-wrap {
+
+}
+
+.ui-pg-table > tbody > tr > .ui-pg-button.ui-state-disabled .ui-icon:hover {
+
+}
+
+.menu-toggler .menu-span {
+    line-height: 20px;
+    color: white !important;
+}
+
+.ui-jqdialog-content .searchFilter input.input-elm,
+.ui-jqdialog-content .searchFilter select.input-elm{
+    height: 26px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.ui-jqdialog-content .searchFilter tr td.data{
+    padding-right: 10px;
+}
+
+
+.nav-list > li > .submenu li > .submenu > li > a {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+.nav-list > li > .submenu li > .submenu{
+    /*box-shadow: 2px 1px 3px inset;
+    -moz-box-shadow: 2px 1px 3px inset;
+    -webkit-box-shadow: 2px 1px 3px inset;
+    */
+    
+    padding-left: 10px;
+}
+
+/*
+.nav-list > li > .submenu li > .submenu li a span{
+    /!*box-shadow: 2px 1px 3px inset;
+    -moz-box-shadow: 2px 1px 3px inset;
+    -webkit-box-shadow: 2px 1px 3px inset;
+    *!/
+    
+    padding-left: 13px;
+}
+*/
+
+.nav-list > li .submenu > li.active > a > [class*="icon-"]:first-child {
+    color: #c86139;
+}
+
+.nav-list > li .submenu > li a:HOVER > [class*="icon-"]:first-child{
+    display: block;
+}
+
+.nav-list > li > .submenu > li > .submenu li:first-child > a {
+    border-top: 1px solid #e4e4e4;
+}
+
+.nav-list > li > .submenu > li > .submenu li:first-child > a:hover {
+    border-top: 2px solid #e4e4e4;
+    padding-top: 6px;
+}
+
+
+#unbindTerminal .ui-pg-div .ui-icon:before {
+  font-family: inherit;
+}
+
+
+/**************************************************/
+/****************  ztree     **********************/
+/**************************************************/
+.ztree * {
+    font-size: 16px !important;
+}
+
+.ztree li {
+    line-height: 24px !important;
+}
+
+.ztree li span.button.switch {
+    height: 23px !important;
+}
+
+.ztree li span.button.center_open {
+    background-position: -92px -16px !important;
+}
+
+.ztree li span.button.center_close {
+    background-position: -74px -34px !important;
+}
+
+.ztree li span.button.roots_open {
+    background-position: -92px 2px !important;
+}
+
+.ztree li span.button.roots_close {
+    background-position: -74px 2px !important;
+}
+
+.ztree li span.button.root_close {
+    background-position: -74px -52px !important;
+}
+
+.ztree li span.button.root_open {
+    background-position: -92px -52px !important;
+}
+
+.ztree li span.button.bottom_close {
+    background-position: -74px -34px !important;
+}
+
+.ztree li span.button.bottom_open {
+    background-position: -92px -34px !important;
+}
+
+.ztree li a.curSelectedNode {
+    height: 23px !important;
+}
+
+/**************************************************/
+/****************  jqgrid     **********************/
+/**************************************************/
+.ui-jqgrid.sub-grid {
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.ui-jqgrid.sub-grid .ui-jqgrid-htable th div{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.ui-jqgrid.sub-grid .ui-jqgrid-htable th span.ui-jqgrid-resize,
+.ui-jqgrid.sub-grid .ui-jqgrid-htable th div {
+  height: 24px !important;
+  line-height: 24px
+}
+.ui-jqgrid.sub-grid tr.ui-row-ltr td, .ui-jqgrid tr.ui-row-rtl td {
+  padding: 2px 4px;
+}
+
+.ui-jqgrid tr.jqgrow>td:first-child>a:focus,
+.ui-jqgrid tr.jqgrow>td:first-child>a:hover {
+  text-decoration: none;
+}
+.ui-jqgrid .jqgrow>td>a>span.ui-icon {
+  position: relative;
+  right: auto;
+  font-size: 20px;
+}
+
+/*
+//隐藏表头
+.ui-jqgrid.grid-from-factory>.ui-jqgrid-view>.ui-jqgrid-hdiv {
+  visibility: hidden;
+}
+*/
+
+/*单元格内容换行*/
+.ui-jqgrid tr.jqgrow td {
+    word-wrap: break-word;
+}
+
+/*jgrid宸ュ叿鏍忔寜閽�/
+/**
+.ui-state-disabled .ui-pg-div .ui-icon,
+.ui-state-disabled .ui-pg-div .ui-icon:hover {
+    opacity: 0.35!important;
+    cursor: default!important;
+}
+
+.ui-pg-table > tbody > tr > .ui-pg-button.ui-state-disabled .ui-icon {
+  -moz-transform: none!important;
+  -webkit-transform: none!important;
+  -o-transform: none!important;
+  -ms-transform: none!important;
+  transform: none!important;
+}
+**/
+
+/*表单关闭按钮*/
+.ui-jqdialog-titlebar-close {
+  cursor: pointer!important;
+}
+
+.FormGrid .FormElement.error,
+form input.error, form textarea.error, form select.error{
+  border-color : red;
+}
+
+.FormGrid label.error,
+form label.error{
+  color : #d16e6c !important;
+  display: block;
+}
+
+.ui-pg-button-add .ui-icon,
+.ui-pg-button-search .ui-icon,
+.ui-pg-button-refresh .ui-icon {
+  color: #FFF !important;
+}
+
+.ui-pg-button-del,
+.ui-pg-button-edit,
+.ui-pg-button-view {
+  display: none!important;
+}
+
+.ui-jqgrid-toppager .ui-jqgrid .ui-pager-control {
+  height: 20px!important;
+}
+.ui-jqgrid-toppager .ui-separator-wrap {
+  display: none!important;
+}
+
+.ui-jqgrid-toppager .ui-icon {
+  font-size: 22px!important;
+  width: auto!important;
+  margin: 0 5px!important;
+}
+
+.ui-pg-selbox {
+  display: inline-block!important;
+  *display: inline!important;
+  zoom: 1!important;
+}
+
+
+/*juqyer 顶部背景*/
+.ui-jqgrid .ui-jqgrid-toppager {
+  background: #2A7CCE!important;
+}
+/*TODOjquery ui样式要弄出去?*/
+/*jquery ui diloag默认按钮在右边，加上宽度100%便于个别按钮左飘*/
+.ui-dialog-buttonset{
+  width: 100%;
+  text-align: right;
+}
+
+/*jquery ui diloag修改按钮面板padding-left,保持和padding-right一直*/
+.ui-dialog .ui-dialog-buttonpane {
+  padding: .3em 1em .5em 1em;
+}
+
+
+/*jqgrid*/
+.ui-jqgrid .ui-jqgrid-bdiv {
+  /*overflow: visible!important;
+  overflow-x: auto;*/
+}
+
+
+/*以下两个样式是为了让详细信息窗口的内容在过长时能换行，且换行后保持整齐和间隔*/
+.ui-jqdialog-content .DataTD {
+  padding: 2px 2px 2px 5px;
+}
+
+.ui-jqdialog-content .form-view-data {
+  white-space:pre-line;
+  text-indent: -3px;
+}
+
+/*这个样式是为了让dropdown-menu能够看到*/
+.ui-jqgrid .ui-jqgrid-toppager{
+  overflow: visible;
+}
+
+/* 搜索框select2控件 */
+.ui-jqdialog-content .searchFilter .select2-container.input-elm {
+    width: 200px !important;
+    /*bottom: 5px;*/
+}

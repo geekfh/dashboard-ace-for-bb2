@@ -1,0 +1,660 @@
+/*>>>>>>> scroll-more-wrapper*/
+.scroll-more-wrapper {
+    
+}
+.scroll-more-wrapper .load-indicator {
+    display: block;
+    line-height: 32px;
+    height: 32px;
+    border-top: 1px solid #E5E5E5;
+    position: relative!important;
+    z-index: 10;
+    width: 100%;
+    color: #999;
+}
+.scroll-more-wrapper .load-indicator .text{
+    color: #999;
+}
+
+.scroll-more-wrapper .end-indicator .the-line {
+    height: 1px;
+    background-color: #E5E5E5;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.scroll-more-wrapper .end-indicator{
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+}
+.scroll-more-wrapper .end-indicator .text-wrap{
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+.scroll-more-wrapper .end-indicator .text-wrap .text{
+    color: #999;
+    padding: 0 8px;
+    background-color: #FFF;
+}
+
+/*scroll-more-wrapper<<<<<<<<< */
+
+.route-conf-body {
+    width: 100%;
+    display: inline-block;
+    min-width: 910px;
+}
+
+.route-conf-body .model-list {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.route-conf-head .route-conf-edit {
+    margin: 0 10px;
+}
+
+.route-conf-head .route-conf-ok {
+    margin: 0 10px;
+}
+
+.route-conf-head .route-conf-cancel {
+    margin: 0 10px;
+}
+
+/*.route-panel-looking .batch-edit-bind {
+    display: none !important;
+}
+
+.batch-edit-bind {
+    display: inline-block;
+    width: 100%;
+}
+
+.txn-model-list .batch-edit-bind {
+    display: none !important;
+}
+
+.channel-model-list .batch-edit-bind {
+    display: none !important;
+}
+
+.batch-edit-bind .batch-bind {
+    margin: 0 10px;
+    float: left;
+}
+
+.batch-edit-bind .batch-unbind {
+    margin: 0 10px;
+    float: right;
+}*/
+
+
+.models-group .dropdown-menu.dropdown-close.pull-right {
+    right: 15px !important;
+}
+
+.models-group .model-panel {
+    margin: 10px;
+    padding: 8px;
+    background: #e8e8e8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.models-group .model-panel .model-content-disable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background: #ccc;
+    border-radius: 10px;
+    z-index: 1000 !important;
+    opacity: 0.5 !important;
+    filter: alpha(opacity=50) !important;
+}
+
+.models-group .panel-head {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.models-group .add-model {
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    cursor: pointer;
+    color: #428bca;
+}
+
+.models-group .upload-models {
+    font-size: 25px;
+    position: absolute;
+    left: 6px;
+    top: 12px;
+    cursor: pointer;
+    color: #428bca;
+}
+
+.models-group .download-excel {
+    font-size: 25px;
+    position: absolute;
+    left: 36px;
+    top: 14px;
+    cursor: pointer;
+    color: #428bca;
+}
+
+.models-group .panel-search {
+    margin: 5px 0;
+    position: relative;
+}
+
+.models-group .panel-search .search-models {
+    width: 100%;
+    border-radius: 14px !important;
+    padding-left: 28px;
+    padding-top: 7px !important;
+    cursor: text;
+}
+
+.models-group .panel-search .filters-search {
+    position: relative;
+    margin-right: 100px;
+}
+
+.models-group .btn-margins {
+    margin: 0 20px;
+}
+
+.models-group .panel-search .filter-pop-trigger {
+    position: absolute;
+    top: 0;
+    right: -90px;
+}
+
+.models-group .condition-operate {
+    text-align: center;
+}
+
+.models-group .panel-search i{
+    position: absolute;
+    left: 10px;
+    font-size: 17px;
+    top: 8px;
+    color: #999;
+}
+
+.models-group .panel-search .clear-search {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #999;
+    line-height: 20px;
+    height: 20px;
+    display: none;
+}
+
+.models-group .panel-search .clear-search:hover {
+    color: #666;
+}
+
+.models-group .panel-search .mcht-clear-search {
+    position: absolute;
+    right: 107px;
+    top: 6px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #999;
+    line-height: 20px;
+    height: 20px;
+    display: none;
+}
+
+.models-group .panel-search .mcht-clear-search:hover {
+    color: #666;
+}
+
+/*>>>>>>>>>> edit by hele*/
+.models-group .panel-search .label-space-2em {
+    width: 2em!important;
+    display: inline-block!important;
+}
+
+.models-group .panel-search .popover-content .condition {
+    margin: 10px 0;
+}
+
+.models-group .panel-search .popover-content .condition-label {
+    color: black;
+}
+
+.models-group .panel-search .popover-content .condition-select {
+    margin-left: 5px;
+}
+.models-group .panel-search .popover-content .condition-long-input {
+    display: inline-block;
+    width: 140px;
+    margin-left: 5px;
+}
+
+.models-group .panel-search .popover-content .condition-short-input {
+    display: inline-block;
+    width: 90px;
+    margin-left: 5px;
+}
+
+/*edit by hele <<<<<<<<<<<*/
+
+
+.models-group .edit-model {
+    color: #f0ad4e;
+    cursor: pointer;
+    margin: 0 5px;
+    visibility: hidden;
+}
+
+.models-group .view-model {
+    color: #428bca;
+    cursor: pointer;
+    margin: 0 5px;
+    visibility: hidden;
+}
+
+
+.models-group .del-model {
+    color: red;
+    cursor: pointer;
+    margin: 0 5px;
+    visibility: hidden;
+}
+
+.models-group .edit-model:hover {
+    color: #ccc;
+}
+
+.models-group .view-model:hover {
+    color: #ccc;
+}
+
+.models-group .del-model:hover {
+    color: #ccc;
+}
+
+
+.models-group .batch-btn {
+    float: right;
+    margin: 0 3px;
+}
+
+
+.model-content:hover .edit-model {
+    visibility: visible;
+}
+
+.model-content:hover .view-model {
+    visibility: visible;
+}
+
+.model-content:hover .del-model {
+    visibility: visible;
+}
+
+.models-group .equal-way {
+    color: #7ed321;
+    margin: 0 5px;
+}
+
+.models-group .seriate-way {
+    color: #f0ad4e;
+    margin: 0 5px;
+}
+
+.models-group .random-way {
+    color: #9585bf;
+    margin: 0 5px;
+}
+
+.models-group .model-content {
+    margin: 8px 0;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 50px;
+    position: relative;
+}
+
+.models-group .model-blur {
+    background: #f1f1f1 !important;
+}
+
+.models-group .model-selected {
+    border: 1px solid #428bca !important;
+}
+
+.models-group .model-content .model-left-check {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 50px;
+    height: 87px;
+    line-height: 87px;
+}
+
+.models-group .model-content .model-left-check .label-pointer {
+    cursor: pointer;
+}
+
+.models-group .model-content .model-head {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    color: #333;
+    position: relative;
+    padding-left: 10px;
+    border-left: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.models-group .model-content .model-head .model-head-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 50px;
+}
+
+.models-group .model-content .model-remark {
+    font-size: 14px;
+    line-height: 47px;
+    height: 47px;
+    color: #666;
+    padding-left: 10px;
+    border-left: 1px solid #eaeaea;
+}
+
+.models-group .model-content .model-operate {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.models-group .model-pager {
+    position: relative;
+    top: 13px;
+}
+
+.models-group .model-pager .pager-tool {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.models-group .model-pager .mcht-total-num {
+    position: relative;
+    float: left;
+    top: -5px;
+}
+
+.pager-tool .pagination{
+    margin: 0 !important;
+}
+
+.pager-tool .pagination li a {
+    padding: 3px 6px !important;
+}
+
+.pager-tool .pager-message {
+    float: left;
+    line-height: 27px;
+}
+
+.pager-tool .pager-buttons {
+    float: right;
+}
+
+/*冰冰对话框*/
+.theme-bb.ui-dialog {
+  border: none!important;
+  xwidth: 95%!important;
+  xmax-width: 570px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+}
+/*ui-widget-header 和 ui-dialog-titlebar 是同个东西，别手贱去掉*/
+.theme-bb.ui-dialog .ui-widget-header{
+  filter: none;
+  height: 48px;
+  line-height: 48px;
+}
+.theme-bb.ui-dialog .ui-widget-header {
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.theme-bb.ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+  color: #333!important;
+}
+.theme-bb.ui-dialog .ui-dialog-titlebar-close, 
+.theme-bb.ui-jqdialog .ui-dialog-titlebar-close{
+  display: none;
+}
+
+.theme-bb.ui-dialog .ui-dialog-titlebar-close:before {
+  /*font-size: inherit!important; */
+}
+
+.model-panel .control-label {
+    text-align: right;
+    padding-right: 0;
+    /*top: -2px;*/
+}
+
+.model-panel .form-control {
+    height: 30px;
+    /*border-radius: 10px !important;*/
+}
+
+.model-panel .form-group {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.model-panel .text-control {
+    width: 100%;
+}
+
+/*增加模型*/
+.model-panel{
+    padding-top: 14px!important;
+}
+.model-panel>form {
+    padding-bottom: 10px;
+}
+.model-panel .fieldset-group {
+    overflow: visible;
+    background-color: #FAFAFA;
+  box-shadow:0 1px 3px #CDCDCF;
+  margin-bottom: 10px;
+  min-height: 80px;
+}
+.model-panel .fieldset-group .group-head{
+    position: relative;
+     padding: 0 16px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.model-panel .fieldset-group .group-head .field-types-dd{
+    position: relative;
+    font-size: 25px;
+    float: right;
+    cursor: pointer;
+    color: #428bca;
+}
+
+.model-panel .fieldset-group .group-head .field-types-dd ul.dropdown-menu{
+    left: auto;
+    height: 200px;
+    overflow: auto;
+}
+.model-panel .separator{
+    height: 0px;
+    width: 100%;
+    border-top: 1px solid #D4D4D4;
+    border-bottom: 1px solid #F1F1F1;
+}
+.model-panel .fieldset-group .group-body table{
+    width: 100%;
+}
+.model-panel .fieldset-group .group-body table tr:hover {
+  border-color: #E2EAF2;
+  background-color: #D5E8F5;
+}
+.model-panel .fieldset-group .group-body tr.field-wrap>td{
+    padding: 5px 0;
+}
+.model-panel .fieldset-group .group-body tr.field-wrap>td.col-label {
+    padding-left: 16px;
+    padding-right: 12px;
+}
+.model-panel .fieldset-group .group-body tr.field-wrap>td.col-opr {
+    padding-right: 16px;
+}
+.model-panel .fieldset-group .inline-block{
+    display: inline-block;
+}
+.model-panel .fieldset-group .label-block {
+    min-width: 80px;
+}
+.model-panel .bootstrap-tagsinput {
+    margin-bottom: 0;
+}
+.model-panel .fieldset-group .group-body select.opr-select{
+    margin-right: 12px;
+}
+.model-panel .fieldset-group .group-body select{
+    height: auto;
+    padding: 0;
+}
+
+.model-panel .condition-panel .caption{
+    font-size: 14px;
+}
+
+.model-panel .condition-panel{
+    padding: 22px 16px 0;
+}
+.model-panel .condition-panel .btn-add-fieldset-group {
+    font-size: 18px;
+}
+.model-panel .condition-panel .btn-remove-fieldset {
+    margin-left: 16px;
+}
+.model-panel .btn-remove-field{
+    font-size: 25px;
+    color: #D0021B;
+}
+
+.model-panel .address-code {
+    position: absolute;
+    z-index: 9999;
+}
+
+.filter-form-group .address-code {
+    position: absolute;
+    z-index: 9999;
+}
+
+.model-panel .address-select {
+    width: 90px;
+}
+
+.mcht-channel-model .form-group {
+    margin-bottom: 0 !important;
+}
+
+.ui-dialog-content div.error {
+    border: 1px solid red;
+}
+
+
+.route-panel-editing .add-model {
+    display: none !important;
+}
+
+.route-panel-editing .upload-models {
+    display: none !important;
+}
+
+.route-panel-editing .download-excel {
+    display: none !important;
+}
+
+.route-panel-editing .edit-model {
+    display: none !important;
+}
+
+.route-panel-editing .del-model {
+    display: none !important;
+}
+
+
+.route-panel-editing .batch-op-dd-toggle {
+    display: none !important;
+}
+
+
+.condition-panel-sit .model-detail-label{
+}
+
+.fieldset-groups-sit .has-error {
+    color: red;
+    padding: 0 2px;
+}
+
+.fieldset-groups-sit label.error {
+    display: inline;
+    padding: 0 2px;
+}
+
+.fieldset-groups-sit .val-block {
+    max-width: 260px;
+}
+
+.form-sit .region-code {
+    padding-right: 0 !important;
+    width: 21.5% !important;
+}
+
+
+.form-sit .priority-label {
+    padding-left: 0 !important;
+    color: #aaa;
+}
+
+/*公共的省市区下拉框样式*/
+.address-panel {
+    display: inline-block;
+}
+
+.address-panel .address-code {
+    position: absolute;
+}

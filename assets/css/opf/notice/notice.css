@@ -1,0 +1,286 @@
+.menu-notice .unread-num {
+  background: #CA4236;
+  line-height: 14px;
+  overflow: hidden;
+  border-radius: 7px;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  padding: 0 3px;
+}
+
+.notice-detail-panel .message-content{
+  background-color: rgb(245,245,245); 
+  font-size: 16px;
+  word-wrap: break-word;
+}
+.notice-detail-panel .message-content .wrap{
+  background-color: #FFF;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #B2B4BC;
+  -o-box-shadow:0 0 10px #CDCDCF;
+  -moz-box-shadow:0 0 10px #CDCDCF;
+  -webkit-box-shadow: 0 0 10px #CDCDCF;
+  box-shadow:0 0 10px #CDCDCF;
+}
+
+#notice-ckeditor-btn-select-file {
+  margin-left: 10px;
+  color: #2679b5;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+#notice-ckeditor-btn-select-file * {
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .message-bar {
+    min-height: initial!important;
+  }
+  .notice-detail-panel .attached-file .attached-name {
+    max-width: 200px!important;
+  }
+}
+/*附件*/
+.notice-detail-panel ul.attachment-list > li {
+  margin-bottom: 5px;
+}
+.notice-detail-panel .attached-file {
+  width: auto;
+  cursor: pointer;
+}
+.notice-detail-panel .attached-file .attached-name {
+  max-width: initial;
+}
+.notice-detail-panel .message-body img {
+  padding: 5px;
+}
+.notice-detail-panel .message-body img:hover {
+  cursor: pointer;
+  background-color: #F2F6F9;
+}
+
+.message-navbar {
+  padding-top: 14px!important;
+  padding-bottom: 14px!important;
+}
+.notice-form-panel .message-item-bar {
+  min-height: 30px;
+}
+.notice-list-panel .btn-new-notice {
+    background: none !important;
+    border: none !important;
+}
+
+.notice-form-panel .btn-send-message {
+  top: auto;
+  margin-bottom: -6px;
+}
+
+.notice-list-panel .message-navbar .nav-search{
+    left: auto;
+}
+
+.notice-list-panel .message-navbar .nav-add {
+  position: absolute;
+/*  right: 10px;*/
+  bottom: 12px;
+}
+.notice-list-panel .message-navbar .nav-add .btn-add{
+  border: 1px solid #6fb3e0;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 14px !important;
+  font-size: 20px;
+  color: #6fb3e0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.notice-list-panel .message-navbar .nav-add .btn-add:hover {
+  color: #FFF;
+  background-color: #6fb3e0;
+}
+
+.upload-attach-panel {
+  font-size: 16px;
+  margin: 3px;
+}
+
+.upload-attach-panel i {
+  position: relative;
+  margin-right: 6px;
+  top: -1px;
+}
+
+.upload-attach-panel label {
+  font-size: 16px;
+}
+
+.upload-attach-panel .upload-percent {
+  font-size: 13px;
+}
+
+.upload-attach-panel .delete-file {
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  color: red;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+
+/*公告表格样式*/
+.notices-table {
+    width: 100%;
+}
+.notice-item {
+  border: 1px solid #EAEDF1;
+  border-bottom-width: 0;
+  padding: 12px 12px 14px;
+  line-height: 18px;
+  position: relative;
+  background-color: #FFF;
+}
+.notice-item:first-child {
+  border-top-width: 0;
+}
+.notice-item:hover {
+  border-color: #E2EAF2;
+  background-color: #F2F6F9;
+}
+.notice-item:hover + .notice-item {
+  border-top-color: #E2EAF2;
+}
+.notice-item:hover + .notice-item.selected {
+  border-top-color: #FFF;
+}
+.notice-item.selected {
+  background-color: #EFF4F7;
+  border-color: #FFF #E2EAF2;
+}
+.notice-item.selected + .notice-item {
+  border-top-color: #FFF;
+}
+.notice-item.selected + .notice-item:hover + .notice-item {
+  border-top-color: #FFF;
+}
+tr.notice-item td.col-checkbox {
+    width: 32px;
+}
+tr.notice-item td.col-time {
+    text-align: right;
+}
+tr.notice-item td.col-summary {
+    text-align: left;
+}
+tr.notice-item>td {
+    padding: 12px 12px 14px;
+}
+
+.notice-item .col-summary .text[status="1"] {
+  color: #666;
+  font-weight: bold;
+}
+.notice-item .col-summary .text[status="2"] {
+  color: #609fc4;
+  font-weight: bold;
+}
+
+.notice-item .col-summary .text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.notice-item .attachment {
+  float: none;
+}
+
+/*公告列表分页*/
+.notice-list-panel .message-footer .pagination > li > a {
+  cursor: pointer;
+}
+.notice-list-panel .message-footer .pagination > li.disabled > a {
+  color: #CCC;
+  cursor: default;
+}
+.notice-list-panel .message-footer .pagination > li.disabled > a:hover {
+  cursor: not-allowed;
+}
+.notice-list-panel .message-footer .pagination > li > a:hover {
+  background-color: transparent;
+}
+
+.notice-list-panel .pagination > li.disabled > a:hover,
+.notice-list-panel .pagination > li > a {
+  border: 1px solid #CCC;
+  border-radius: 100% !important;
+  width: 26px;
+  height: 26px;
+  line-height: 22px;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+.notice-list-panel .pagination > li > a:hover {
+  border-color: #84AFC9;
+  background-color: #F7F7F7;
+}
+
+/*新建公告表单*/
+.notice-form-panel .select2-container{
+  min-width: 120px;
+}
+.notice-form-panel .select2-container-multi .select2-choices {
+  padding-right: 20px;
+}
+.notice-form-panel .brh-radio-wrap{
+  margin-right: 16px;
+}
+.notice-form-panel .brh-radio{
+  margin-right: 4px;
+}
+.notice-form-panel ul.attachment-list{
+  margin: 0;
+  padding: 0;
+}
+.notice-form-panel ul.attachment-list li{
+  list-style: none;
+}
+
+.notice-form-panel .btn-submit-notice {
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+}
+
+.hack-input-for-editor-error {
+  position: absolute !important;
+  left: -9999px !important;
+}
+.has-error .cke {
+  border-color: red !important;
+} 
+.notice-form-panel .editor-container{
+  min-height: 300px;
+  max-width: 780px;
+}
+
+.form-group .cke_path {
+  visibility: hidden !important;
+}
+
+/*导航栏上未读公告*/
+#notify-boxes li > a > .badge {
+  top: -10px;
+  left: -8px;
+}

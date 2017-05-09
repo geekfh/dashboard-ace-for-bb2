@@ -1,0 +1,528 @@
+.service-group .service-activate {
+    max-width: 900px;
+    min-width: 600px;
+    margin: 0 auto;
+    /*border: 1px solid #000;*/
+    padding: 10px;
+    position: relative;
+}
+
+.service-group .header-conf {
+    color: #999;
+    width: 100%;
+}
+
+.service-group .activ-row {
+    width: 100%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.service-group .activ-row label {
+    margin-top: 4px;
+    text-align: right;
+}
+
+.service-group .qulified-header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding: 0 150px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.service-group .qulified-header label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-group label.error {
+    text-align: left !important;
+}
+
+.service-group input.error {
+    margin-right: 5px !important;
+}
+
+.service-group .left-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 50px;
+}
+
+.service-group .left-menu .backgrid-filter {
+    margin: 0 !important;
+    width: 150px !important;
+    height: 50px !important;
+}
+
+.service-group .left-menu input {
+    width: 100%;
+    left: 0;
+    top: 11px;
+}
+
+.service-group .left-menu .clear {
+    top: 52%;
+    right: -25px;
+}
+
+.service-group .invite-num {
+    color: blue;
+    cursor: pointer;
+    border-bottom: 1px dashed blue;
+}
+
+.service-group .invite-mcht {
+    color: #428bca;
+    cursor: pointer;
+    border-bottom: 1px dashed #428bca;
+}
+
+.service-group .right-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 50px;
+}
+
+.service-group .qualified-table {
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.service-group .activate-mchts-group {
+    margin-top: 10px !important;
+}
+
+.service-group .back-list {
+    font-size: 30px;
+    color: #1b6aaa;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-group .qualified-table .backgrid {
+    width: 100%;
+}
+
+.service-group .qualified-table table.backgrid>thead>tr {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    min-height: 36px;
+}
+
+.service-group .qualified-table table.backgrid>tbody>tr {
+    border-bottom: 1px solid #e4e4e4;
+    min-height: 50px;
+}
+
+.service-group .qualified-table table.backgrid>thead>tr>th {
+    padding: 10px;
+}
+
+.service-group .qualified-table table.backgrid>tbody>tr>td {
+    padding: 10px;
+}
+
+
+.service-group .mcht-qualified table.backgrid>tbody>tr>td:nth-of-type(1) {
+    width: 43%;
+}
+.service-group .mcht-qualified table.backgrid>tbody>tr>td:nth-of-type(2) {
+    width: 43%;
+}
+.service-group .mcht-qualified table.backgrid>tbody>tr>td:nth-of-type(3) {
+    width: 14%;
+}
+
+/*.service-group .mcht-qualified table.backgrid>thead>tr>th:nth-of-type(4) {
+    text-align: right;
+}
+.service-group .mcht-qualified table.backgrid>tbody>tr>td:nth-of-type(4) {
+    text-align: right;
+}*/
+
+
+
+
+
+
+.service-group .branch-qualified table.backgrid>tbody>tr>td:nth-of-type(1) {
+    width: 38%;
+}
+.service-group .branch-qualified table.backgrid>tbody>tr>td:nth-of-type(2) {
+    width: 38%;
+}
+.service-group .branch-qualified table.backgrid>tbody>tr>td:nth-of-type(3) {
+    width: 12%;
+    /*cursor: pointer;*/
+}
+
+.service-group .branch-qualified table.backgrid>tbody>tr>td:nth-of-type(4) {
+    width: 12%;
+    cursor: pointer;
+}
+
+.service-group .branch-qualified table.backgrid>tbody>tr>td:nth-of-type(3) input {
+    width: 100%;
+}
+
+.service-group .branch-qualified table.backgrid>tbody>tr>td:nth-of-type(4) input {
+    width: 100%;
+}
+
+
+
+/*.service-group .qualified-table table.backgrid>thead>tr>th a {
+    color: black !important;
+}
+
+.service-group .qualified-table table.backgrid>tbody>tr>td:nth-of-type(4) {
+    width: 12%;
+}
+
+*/
+
+.service-group .activate-mchts-group table.backgrid>thead>tr>th:nth-of-type(1) {
+    width: 12.5%;
+}
+
+.service-group .activate-mchts-group table.backgrid>thead>tr>th:nth-of-type(2) {
+    width: 25%;
+}
+
+.service-group .activate-mchts-group table.backgrid>thead>tr>th:nth-of-type(3) {
+    width: 12.5%;
+}
+
+.service-group .activate-mchts-group table.backgrid>thead>tr>th:nth-of-type(4) {
+    width: 12.5%;
+}
+
+.service-group .activate-mchts-group table.backgrid>thead>tr>th:nth-of-type(5) {
+    width: 20%;
+}
+
+.service-group .activate-mchts-group table.backgrid>thead>tr>th:nth-of-type(6) {
+    width: 17.5%;
+}
+
+.service-group .activate-mchts-group .status {
+    text-align: left !important;
+}
+
+
+/**
+ * 代理商服务列表
+ */
+
+.brh-service-list-container .service-row {
+    margin: 0 0 24px 0;
+    padding: 24px 12px;
+    border: 1px solid #e5e5e5;
+    color: #333333;
+}
+
+.brh-service-list-container .title-fee-special {
+    margin-right: 12px;
+}
+
+.brh-service-list-container .title {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 991px){
+    .brh-service-list-container .title {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+}
+
+.brh-service-list-container .fee {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #009944;
+}
+
+.brh-service-list-container .special-offers {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@media(max-width: 991px){
+    .brh-service-list-container .special-offers-title {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+.brh-service-list-container .service-desc {
+    margin-top: 12px;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+
+@media(max-width: 991px){
+    .brh-service-list-container .service-desc {
+        margin-top: 16px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+.brh-service-list-container .service-desc .service-title {
+    display: none;
+}
+
+@media(max-width: 991px){
+    .brh-service-list-container .service-desc .service-title {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 5px;
+        color: #333;
+    }    
+}
+
+.brh-service-list-container .service-detail-desc {
+    display: none;
+}
+
+.brh-service-list-container .service-desc .unfold,
+.brh-service-list-container .service-desc .fold {
+    color: #438eb9;
+}
+
+.brh-service-list-container .reward-list-buttons-container {
+    padding-left: 0px;
+}
+
+@media(max-width: 991px){
+    .brh-service-list-container .reward-list-buttons-container {
+        padding-left: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.brh-service-list-container .reward-share-model {
+    padding: 0;
+}
+
+.brh-service-list-container .agency-reward {
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+@media(max-width: 991px) {
+    .brh-service-list-container .agency-reward {
+        margin-top: 20px;
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+    .brh-service-list-container .agency-reward .reward-title {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 5px;
+    }    
+}
+
+.brh-service-list-container .share-model {
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+.brh-service-list-container .list-buttons-container {
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px solid #c9c9c9;
+}
+
+@media(max-width: 991px) {
+    .brh-service-list-container .list-buttons-container {
+        border-top: none;
+    }
+}
+
+.brh-service-list-container .bussiness-list {
+    padding: 0px;
+
+    margin-top: 8px;
+}
+
+@media(max-width: 991px) {
+    .brh-service-list-container .bussiness-list {
+        border: 1px solid #c9c9c9;
+        border-radius: 5px;
+    }
+    .brh-service-list-container .bussiness-list div {
+        padding: 0 9px;
+        font-size: 16px;
+        line-height: 42px;
+        color: #666666;
+        border-bottom: 1px solid #c9c9c9;
+    }
+    .brh-service-list-container .bussiness-list .actual {
+        border-bottom: none;
+    }
+}
+
+.brh-service-list-container .bussiness-list .desc {
+    float: left;
+}
+
+.brh-service-list-container .bussiness-list .availableNum,
+.brh-service-list-container .bussiness-list .inviteNum,
+.brh-service-list-container .bussiness-list .actualNum {
+    float: right;
+}
+
+.brh-service-list-container .buttons-container {
+    padding: 0px;
+    text-align: center;
+}
+
+.brh-service-list-container .buttons-container .invite-more-container,
+.brh-service-list-container .buttons-container .show-actual-user-container {
+    padding: 0px;
+    text-align: right;
+}
+
+@media(max-width: 991px) {
+    .brh-service-list-container .buttons-container .invite-more-container,
+    .brh-service-list-container .buttons-container .show-actual-user-container {
+        width: 45%;
+    }
+
+    .brh-service-list-container .buttons-container .invite-more-container {
+        margin-right: 5%;
+    }
+
+    .brh-service-list-container .buttons-container .show-actual-user-container {
+        margin-left: 5%;
+    }
+}
+
+.brh-service-list-container .invite-more {
+    width: 103px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.brh-service-list-container .show-actual-user {
+    width: 103px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+@media(max-width: 991px) {
+    .brh-service-list-container .invite-more {
+        width: 100%;
+    }
+    .brh-service-list-container .show-actual-user {
+        width: 100%;
+    }
+}
+
+.invite-user-container,
+.actual-user-container {
+    margin: 0 20px;
+}
+
+.invite-user-container .backgrid,
+.actual-user-container .backgrid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invite-user-container .backgrid th,
+.invite-user-container .backgrid td,
+.actual-user-container .backgrid th,
+.actual-user-container .backgrid td {
+    height: 20px;
+    max-width: 250px;
+    padding: 4px 5px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.invite-user-container .backgrid thead th a,
+.actual-user-container .backgrid thead th a {
+    display: block;
+}
+
+
+/**
+    服务对象管理 导入服务对象
+*/
+.service-target-group .upload-form .row-num {
+    display: inline-block;
+    border: 1px solid;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 7px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 3px;
+}
+.service-target-group .upload-form .row-content {
+    width: 360px;
+    height: auto;
+    display: inline-block;
+    margin: 0 0 15px;
+}
+
+.service-target-group .upload-form .content-href {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.service-target-group .upload-form .brh-href {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.service-target-group .upload-form .uploadfile {
+    position: relative;
+    top: 3px;
+}
+
+.service-target-group .upload-form .content-upload-btn {
+    background: #428bca;
+    color: #fff;
+    padding: 3px;
+}
+
+.service-target-group .upload-form .form-row .row-param {
+    margin-top: 10px;
+}

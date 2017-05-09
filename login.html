@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <title>统一运营管理平台 - 登录</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="login" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//static.iboxpay.com" rel="dns-prefetch">
+
+    <!--[if lte IE 7]>
+    <script>window.location="youworthit.html";</script>
+    <![endif]-->
+
+    <!-- @compress-start (用于打包，别删这行注释)-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.10.4.full.css">
+    <link rel="stylesheet" href="assets/css/icomoon.io-style.css">
+    <link rel="stylesheet" href="assets/css/icomoon.io-ie7.css">
+    <link rel="stylesheet" href="assets/css/opf/login.css">
+    <!-- @compress-end (用于打包，别删这行注释)-->
+
+    <!--[if lt IE 9]>
+    <script src="assets/scripts/vendor/html5shiv.min.js"></script>
+    <script src="assets/scripts/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/scripts/vendor/jquery-1.10.2.js"></script>
+    <script src="assets/scripts/vendor/jquery.validate.js"></script>
+
+    <script src="assets/scripts/vendor/bootstrap.js"></script>
+    <script src="assets/scripts/vendor/bootbox.js"></script>
+
+    <script src="assets/scripts/fwk/entry/forgetPassword.js"></script>
+
+    <script>
+        var console = window.console ? window.console : {
+            log: function() {},
+            info: function() {},
+            warn: function() {},
+            error: function() {}
+        };
+    </script>
+</head>
+<body>
+
+    <h2 class="login-success" style="display: none;">登录成功，正在跳转...</h2>
+
+    <div class="main-body none-select">
+        <div class="brand">
+            <span>统一运营管理平台</span>
+        </div>
+        <form id="login-form" class="login-body" onsubmit="return false;">
+            <div class="login-body-li user-li"> <i class="icon-opf-user"></i>
+                <span>|</span>
+                <input type="text" placeholder="请输入用户名/手机/邮箱" name="username"></div>
+            <div class="login-body-li psw-li"> <i class="icon-opf-lock"></i>
+                <span>|</span>
+                <input type="password" placeholder="请输入密码" name="password"></div>
+
+            <div class="login-body-li psw-li verification">
+                <div style="display:inline-block;">
+                    <input type="text" placeholder="请输入验证码" name="token" style="width: 130px !important; height: 36px !important; padding-left: 10px;"></div>
+
+                <div style="display:inline-block;" href="javascript: void 0">
+                    <img src="api/entry/new-token" class="token-img-switcher token-img" style="position:absolute;top:0;width: 90px !important; height: 36px !important; cursor:pointer;" />
+
+                    <i style="float:none;" class="icon-refresh token-img-switcher refresh-icon"></i>
+                </div>
+            </div>
+
+            <button class="pull-left login-btn" type="button" name="loginBtn" id="login-btn">登 录</button>
+
+            <div class="bottom-line">
+                <a class="pull-right" id="btn-forget-password" href="#">忘记密码？</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="forget-password-main" style="display: none"></div>
+
+    <script src="assets/scripts/vendor/placeholders.min.js"></script>
+    <script src="assets/scripts/login.js"></script>
+    <script type="text/template" id="forget-password-template">
+        <div class="forget-password-header">找回账户密码</div>
+        <div class="remove-icon"><i class="icon-arrow-left icon-on-left"></i></div>
+        <div style="padding-left: 20px;">
+            <form id="repair-password-from">
+                <div class="entry-verifyCode">
+                    <div class="row row-style">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-9" id="result-verification-success" style="display: none;"><div class="success-message"><i class="icon-opf-check-circle icon-green-color"></i> 验证成功</div></div>
+                        <div class="col-xs-9" id="result-verification-error" style="display: none;"><div class="error-message"><i class="icon-opf-minus-circle icon-red-color"></i> 验证码错误</div></div>
+                    </div>
+                    <div class="row" style="margin-top: 8px;">
+                        <div class="col-xs-3 col-override">登录名:</div>
+                        <div class="col-xs-9"><input type="text" name="loginName"></div>
+                    </div>
+                    <div class="row row-style">
+                        <div class="col-xs-3 col-override">手机号:</div>
+                        <div class="col-xs-9"><input type="text" name="mobile"></div>
+                    </div>
+                    <div class="row" style="margin-top: 6px;">
+                        <div class="col-xs-3 col-override"></div>
+                        <div class="col-xs-5"><button class="btn btn-sm btn-primary button-verifyCode" name="getVerifyCode">获取验证码</button></div>
+                        <div class="col-xs-4"><span id="put-result-information-success"></span></div>
+                    </div>
+                    <div class="row" style="margin-top: 0px;">
+                        <div class="col-xs-3 col-override"></div>
+                        <div class="col-xs-9"><span id="put-result-information-error" class="red-color"></span></div>
+                    </div>
+                    <div class="row row-style">
+                        <div class="col-xs-3 col-override">验证码:</div>
+                        <div class="col-xs-9"><input type="text" name="verifyCode" maxlength="6"></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-9"><button class="btn btn-block btn-primary button-width" name="verification">提 交</button></div>
+                    </div>
+                </div>
+
+                <div class="repair-password" style="display: none">
+                    <div class="row row-style">
+                        <div class="col-xs-3 col-override">新密码</div>
+                        <div class="col-xs-9"><input type="password" name="password" id="password"></div>
+                    </div>
+                    <div class="row row-style">
+                        <div class="col-xs-3 col-override">确认密码</div>
+                        <div class="col-xs-9"><input type="password" name="repassword"></div>
+                    </div>
+                    <div class="row row-style">
+                        <div class="col-xs-3 col-override"></div>
+                        <div class="col-xs-9"><button class="btn btn-block btn-success button-width" name="repairPassword">确认修改密码</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </script>
+</body>
+</html>

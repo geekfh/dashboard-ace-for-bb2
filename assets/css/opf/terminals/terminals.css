@@ -1,0 +1,361 @@
+.upload-form label.error {
+    display: inline-block;
+    color: #D16E6C;
+}
+
+a.uploadfile {
+    width: 23%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 7px;
+    border: 4px solid #428bca;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #428bca;
+}
+
+a.uploadfile:hover {
+    background: #3276b1;
+}
+
+span.uploadFileIndicator {
+    display: none;
+    margin-left: 12px;
+
+}
+
+div.terminalsQueryContainer {
+    width: 304px;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #e9e9e9;
+    
+}
+
+div.terminalsQueryContainer label.error {
+    text-indent: 90px;
+}
+
+div.terminalsQueryContainer input[name="snNo"],
+div.terminalsQueryContainer select[name="termFactory"],
+div.terminalsQueryContainer select[name="termMachType"] {
+    width: 199px;
+}
+
+div.OperationButtons {
+    position: relative;
+}
+
+div.OperationButtons span {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+div.OperationButtons span.icon-retweet {
+    left: 15px;
+}
+
+div.OperationButtons span.icon-search {
+    right: 54px;
+}
+
+div.OperationButtons .ui-reset {
+    padding-left: 25px;
+}
+
+div.OperationButtons .ui-search {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding-left: 25px;
+}
+
+
+.terminalsQueryContainer label {
+    font-size: 13px;
+    padding: 0px 5px;
+
+}
+
+.terminalsQueryContainer input[name="snNo"] {
+    margin-left: 14px;
+}
+.terminalsQueryContainer select {
+    margin-left: 26px;
+}
+
+
+.terminals-group {
+
+}
+
+.terminals-group .upload-form .row-num {
+    display: inline-block;
+    border: 1px solid;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 7px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 3px;
+}
+
+.terminals-group .upload-form .content-href {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.terminals-group .upload-form .brh-href {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.terminals-group .upload-form .uploadfile {
+    position: relative;
+    top: 3px;
+}
+
+.terminals-group .upload-form .content-upload-btn {
+    background: #428bca;
+    color: #fff;
+    padding: 3px;
+}
+
+
+/*解绑，调配，回收，停用终端列表*/
+
+.select-terminal-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.select-terminal-table td,
+.select-terminal-table th {
+    height: 20px;
+    max-width: 250px;
+    padding: 4px 5px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+/* 解绑选中终端 描述容器 */
+.terminals-operation-msg {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.terminals-operation-msg .title {
+    font-weight: bold;
+}
+
+.terminals-operation-msg .operation-msg {
+    margin-left: 6px;
+}
+.terminals-operation-msg .error-msg {
+    margin-left: 72px;
+    color: red;
+}
+
+
+.target-termused-container {
+    margin: 10px 5px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.target-termused-container .desc {
+    font-weight: bold;
+}
+
+.target-termused-container .target-termused {
+    margin-left: 5px;
+}
+
+/*选中了多个终端时的文字提示样式*/
+.bat-operation .discription {
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bat-operation .discription .term-used,
+.bat-operation .discription .term-amount{
+    color: #0066cc;
+}
+
+/*解绑，调配，回收，停用终端时的提示样式： 是否确认XX*/
+.operate-terminals-hint {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.temrinals-wrap .condition-wrap .form-group {
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: top;
+}
+
+.temrinals-wrap .condition-wrap #fbox_terminalsQuery_search {
+    height: 30px;
+    line-height: 0;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.temrinals-wrap .condition-wrap #fbox_terminalsQuery_reset {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.temrinals-wrap .condition-wrap fieldset {
+    border: 1px solid #eee;
+    padding: 0 16px;
+}
+.temrinals-wrap .condition-wrap fieldset legend {
+    padding: 0 8px;
+    font-weight: bold;
+    width: auto;
+    border-bottom: none;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.temrinals-wrap .condition-wrap .fieldset-innerwrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*代理商列表分页*/
+.agent-list-panel .agent-footer .pagination > li > a {
+    cursor: pointer;
+}
+.agent-list-panel .agent-footer .pagination > li.disabled > a {
+    color: #CCC;
+    cursor: default;
+}
+.agent-list-panel .agent-footer .pagination > li.disabled > a:hover {
+    cursor: not-allowed;
+}
+.agent-list-panel .agent-footer .pagination > li > a:hover {
+    background-color: transparent;
+}
+
+.agent-list-panel .pagination > li.disabled > a:hover,
+.agent-list-panel .pagination > li > a {
+    border: 1px solid #B5B5B5;
+    border-radius: 100% !important;
+    width: 26px;
+    height: 26px;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    border-color: #CCC;
+}
+.agent-list-panel .pagination > li > a:hover {
+    border-color: #84AFC9;
+    background-color: #F7F7F7;
+}
+
+/*代理商列表 手风琴效果 头部*/
+
+.agent-list-panel .panel-heading {
+    margin: 10px 0;
+    padding: 0 15px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    background-color: #EDF3F7;
+}
+
+.agent-list-panel .panel-heading.active {
+    color: #fff;
+    background-color: #2A7CCE;
+}
+
+.agent-list-panel .accordion-toggle {
+    position: relative;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+}
+/*手风琴效果 头部的icon*/
+.agent-list-panel .panel-title i{
+    position: absolute;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.agent-list-panel .panel-title i.icon-sort-up {
+    top: 9px;
+}
+
+.agent-list-panel .panel-title i.icon-sort-down {
+    top: 0px;
+}
+
+
+/*
+    子机构显示样式
+*/
+
+.agent-list-panel .panel-body {
+    padding: 0px 15px;
+}
+
+.agent-list-panel .panel-body .table {
+    cursor: pointer;
+}
+
+/*此机构是上级机构时要突显出来*/
+.agent-list-panel .panel-body .is-upper-brh {
+    background-color: #F1F1F1;
+}
+
+
+.terminals-back-to-agent {
+    margin-bottom: 10px;
+}
+
+/**
+    终端操作历史记录
+*/
+.terminal-history-container {
+    padding: 5px;
+}
+
+.terminal-history-container .title{
+    font-size: 16px;
+}
+
+.terminal-history-container ul {
+    margin: 0px;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #6c6c6c;
+}
+
+
+/*POS机管理/下发管理 导航按钮 使能相关*/
+#terminalsDispatchMgr-table_toppager .ui-icon.inactive,
+#pg_terminalsMgr-table_toppager .ui-icon.inactive {
+    display: none;
+}

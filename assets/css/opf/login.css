@@ -1,0 +1,418 @@
+.refresh-icon {
+    position: absolute !important;
+    top: 10px;
+    right: 1px;
+    line-height: initial !important;
+    cursor: pointer;
+}
+
+.verification {
+    position: relative;
+}
+html, body{
+    font-family: 微软雅黑;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #C0CAAE;
+    background-repeat: repeat-x;
+    background-image: url("images/gradient-bg.png");
+}
+/*xbody{*/
+/*background-color: #53616F;*/
+/*background-image: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.2)), */
+/*-webkit-linear-gradient(340deg, #e5e9bf 10%, #00396f 90%);*/
+/*background-image: -moz-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.2)), */
+/*-moz-linear-gradient(340deg, #e5e9bf 10%, #00396f 90%);*/
+/*background-image: -ms-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.2)), */
+/*-ms-linear-gradient(340deg, #e5e9bf 10%, #00396f 90%);*/
+/*background-image: -o-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.2)), */
+/*-o-linear-gradient(340deg, #e5e9bf 10%, #00396f 90%);*/
+/*background-image: radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.2)), */
+/*linear-gradient(340deg, #e5e9bf 10%, #00396f 90%);*/
+/*}*/
+
+.none-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+label{
+    vertical-align: middle;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.login-success {
+    /*display: none; */
+    position: fixed;
+    left: 50%;
+    margin-left: -140px;
+    top: 36%;
+    color: white;
+}
+
+.login-btn.disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.main-body{
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -185px;
+    width: 320px;
+    background-color:white;
+    border: solid 1px #555555;
+    /*box-shadow: 0px 0px 10px #555555;*/
+}
+
+.brand{
+    float: left;
+    width: 100%;
+    color: #EC6819;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/*.brand span{
+    float: left;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #E3E8EA;
+    line-height: 50px;
+}*/
+/*.iboxpay{
+    width: 63%;
+    height: 100%;
+    float: left;
+}*/
+
+.brand i{
+    font-size: 40px!important;
+    float: left;
+    color: #0866B2;
+}
+
+.iboxpay-logo{
+    float: left;
+}
+
+.iboxpay-logo img{
+    width: 170px;
+    height: 32px;
+    margin-top: 8px;
+    padding-left: 5px;
+}
+
+/*.iboxpay-label{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+
+.iboxpay-name{
+    padding-left: 5px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold; 
+    width: 100%;
+    height: 35%;
+    float: left;
+}
+
+.POS-professor{
+    line-height: 25px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.openplatform{
+    float: left;
+    line-height: 70px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #E46E2A;
+    height: 120%;
+    padding-left: 3%;
+    border-left: 1px solid #D6DBE0;
+}*/
+
+
+.login-body{
+    height: 200px;
+    margin: 35px auto 15px auto;
+}
+
+.login-body-li{
+    width: 100%;
+    float: left;
+}
+
+.login-body-li i{
+    font-size: 20px;
+    color: #96A3AE;
+    padding-left: 18px;
+    float: left;
+    position: absolute;
+    line-height: 50px;
+
+}
+
+.login-body-li span{
+    position: absolute;
+    padding-left: 43px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #F5F5F5;
+    line-height: 45px;
+
+}
+
+.login-body-li.user-li {
+    margin-bottom: 14px;
+}
+.login-body-li.psw-li {
+    margin-bottom: 20px;
+}
+
+.login-body-li input{
+    width: 250px;
+    /*line-height: 50px!important;*/
+    font-size: 16px;
+    height: 50px!important;
+    border: 1px solid #E9E9E9!important;
+    padding-left: 60px;
+    border-radius: 3px;
+    outline:medium;
+    line-height: 50px\0;
+    *line-height: 50px;
+    *padding-left: 60px;
+}
+
+
+.login-body-li input:focus{
+    border-radius: 3px!important;
+    box-shadow: 0px 0px 5px #96A3AE!important;
+    border: 1px solid #C9C0C0!important;
+
+}
+
+#login-btn{
+    margin-bottom: 20px;
+    color: white;
+    width: 250px;
+    height: 50px;
+    background-color: #1479CA;
+    font-size: 20px;
+    font-weight: bold;
+    /*border-radius: 3px;*/
+    outline:medium;
+    border: none;
+    /*box-shadow: 0 2px #19588B!important;*/
+    *width: 315px;
+}
+
+#btn-forget-password {
+    /*padding-right: 20px;*/
+    color: #1479CA;
+    text-decoration: underline;
+}
+#btn-forget-password a:hover {
+    color: #2a6496;
+}
+
+.ui-widget-overlay{
+    background: rgba(0,0,0,0.25);
+    opacity: 1;
+}
+
+.ui-dialog{
+    background-color: #FFF;
+    padding: 0;
+    border: 1px solid #000;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.ui-dialog .ui-dialog-titlebar{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    color: #669fc7;
+    padding: 0;
+    cursor: move;
+    position: relative;
+}
+
+.ui-dialog .ui-dialog-title{
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+form label.error{
+    color: red;
+    display: block;
+}
+
+.head-background-override {
+    background: #e5e5e5 !important
+}
+
+.remove-button-style-override {
+    position: absolute !important;
+    top: 15px !important;
+    right: 5px !important;
+    background: #e5e5e5 !important;
+    border: 0px !important;
+    font-size: 20px;
+    width: 30px !important;
+    height: 30px !important;
+    color: red;
+}
+
+.col-override {
+    padding-right: 5px !important;
+    text-align: right;
+    line-height: 36px;
+}
+
+
+.col-xs-9 input{
+    width: 80%;
+    height: 36px;
+    border: 1px solid #E0E0E0;
+    padding-left: 10px;
+    border-radius: 3px;
+    outline:medium;
+}
+
+
+.col-xs-9 input:focus{
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #96A3AE;
+    border: 1px solid #C9C0C0;
+
+}
+
+.row-style {
+    margin-top: 12px;
+}
+
+.verify-code {
+    margin-top: 40px;
+}
+
+.button-width {
+    width: 80% !important;
+}
+
+.col-xs-4 span {
+    line-height: 30px;
+}
+
+.red-color {
+    color: red;
+    line-height: 15px !important;
+}
+
+.icon-red-color {
+    color: #ff7800;
+}
+
+.icon-green-color {
+    color: #67ab3f;
+}
+
+.span-red-color {
+    color: red;
+    font-size: 20px;
+    border: 1px;
+}
+
+.span-blue-color {
+    color: blue;
+    font-size: 20px;
+}
+
+
+.error-message {
+    color: #d43634;
+    background-color: #fedada;
+    border: 1px solid #ffc6c6;
+    width: 80%;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px
+}
+
+.success-message {
+    color: #3a893b;
+    background-color: #dff0d7;
+    border: 1px solid #d3ecbe;
+    width: 80%;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+}
+
+
+.forget-password-main {
+    position: fixed;
+    width: 320px;
+    height: 360px;
+    background: white;
+    padding-top: 50px;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -180px;
+}
+
+.forget-password-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #444444;
+    font-size: 18px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.remove-icon {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #87b6e1;
+    font-size: 20px;
+    cursor:pointer
+}
+
+.remove-icon i:hover {
+    color: #1479ca;
+}
+
+.button-verifyCode {
+    background-color: #ff7800 !important;
+    border-color: #ff7800 !important;
+}

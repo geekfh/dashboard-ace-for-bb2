@@ -1,0 +1,191 @@
+@CHARSET "UTF-8";
+
+.mcht-query{
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 5px;
+	width: 98%;
+	overflow: hidden;
+}
+
+.mcht-for-line{
+	width: 111.8%;
+}
+
+.mcht-form{
+	margin-right: 59px;
+	padding-right: 0;
+}
+
+.mcht-query-input-title, .mcht-query-sn-title{
+	font-size: 16px; font-weight: 700;
+}
+
+
+.mcht-span{
+	width: 99%;
+	margin-left: 1%; 
+	line-height: 34px;
+	margin: 7px 0;
+	display: inline-block;
+}
+
+.mcht-input{
+	display: inline-block;
+	width: 78%;
+}
+
+.mcht-span .mcht-error{
+	vertical-align: top;
+	line-height: 34px;
+}
+
+.mcht-query .mcht-telphone{
+	width: 100%;
+	max-width: 154px;
+}
+
+.mcht-query .mcht-no{
+	width: 100%;
+	max-width: 210px;
+}
+
+.mcht-query .mcht-mgr-no{
+	width: 100%;
+	max-width: 112px;
+}
+
+.mcht-query .mcht-name{
+	width: 100%;
+	max-width: 280px;
+}
+
+.mcht-query .mcht-snNo{
+	width: 100%;
+	max-width: 112px;
+}
+
+.mcht-query .mcht-Brand{
+	width: 100%;
+	max-width: 196px;
+}
+
+.mcht-query .mcht-kind{
+	width: 100%;
+	max-width: 112px;
+}
+
+.mcht-sn-display{
+	display: none;
+}
+
+.mcht-a{
+	width: 100%;
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+.mcht-query-button{		
+	max-width: 385px;
+	max-width: 415px\9;
+	max-width: 385px\9\0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 5px;
+} 
+
+.mcht-query .btn{	
+	width: 120px;
+	margin-top: 2%;
+}
+
+.mcht-icon-right{
+	width: 1%;
+}
+
+
+.mcht-query-result{
+	padding-right: 0;
+	font: normal;
+	display: none;
+}
+
+.mcht-result-table div{
+	width: 100%;
+	margin-bottom: 10px; 
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+}
+
+.mcht-result-table div span{
+	margin-right: 1.5%;
+}
+
+.mcht-result-table div span:FIRST-CHILD{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+a.mcht-show-display{
+	margin: 0;
+}
+
+.mcht-query-line{
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	left: 36.15%;
+	margin:0 21px 35px; 
+	background-color: #E5E5E5;
+	display: none;
+}
+
+.mcht-factory:HOVER{
+	background: #eefefe;
+	cursor: pointer;
+}
+
+.pager li > a, .pager li > span{
+		padding: 5px 10px;
+}
+
+.mcht-form fieldset{
+	max-width: 385px;
+	padding: 5px 9px 11px;
+	margin: 0 0 31px 5px;
+	border: 1px solid #D4D4D4;
+}
+
+.mcht-form fieldset legend{
+	width: auto;
+	border: none;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 991px){
+	.mcht-query .mcht-query-line{
+		position: static;
+	}
+	
+	.mcht-query-result{
+		max-width: 406px;
+	}
+	
+	.mcht-form{
+		max-width: 540px;
+
+	}
+
+}
+
+@media screen and (max-width: 420px){
+	.foot .page-info{
+		display: block;
+		margin-bottom: 15px;
+	}
+}

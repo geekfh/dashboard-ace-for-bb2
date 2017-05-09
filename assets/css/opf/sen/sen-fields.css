@@ -1,0 +1,188 @@
+.sen-fields-panel-sit {
+    min-height: 200px;
+}
+
+.input-state-change {
+    background-color: #F6F675!important
+}
+
+.sen-fields-panel .panel {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+}
+.sen-config-page .agent-ct{
+    margin-bottom: 32px;
+}
+.sen-fields-panel .head,
+.sen-fields-panel>.body{
+    width: 100%;
+    position: relative;
+}
+.sen-fields-panel>.body{
+}
+.sen-fields-panel .head{
+    background: #FFF;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+    text-align: center;   
+    font-size: 14px;
+    padding: 8px 0 16px 0;
+}
+
+.sen-fields-panel .head .btn{
+    float: none;
+    font-weight: bold;
+    padding: 3px 16px;
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+.sen-fields-panel .head .btn-group{
+    z-index: 10;
+}
+.sen-fields-panel .head .btn-group.for-edit {
+    display: none;
+}
+
+.sen-fields-panel table.fields-table{
+    position: relative;
+    width: 100%;
+}
+.sen-fields-panel .group-item-panel{
+    border-bottom: 1px solid #cfcfcf!important;
+}
+.sen-fields-panel .group-item-panel .panel-body {
+    border-top: none;
+    padding: 0;
+}
+
+.sen-fields-panel .for-edit {
+    display: none;
+}
+
+.sen-fields-panel .for-edit .begin-input,
+.sen-fields-panel .for-edit .end-input{
+    width: 30px;
+}
+
+.sen-fields-panel .filter-bar-sit {
+    position: absolute;
+    width: 100%;
+} 
+
+.sen-fields-panel .filter-indicator {
+    display: inline-block;
+    border: 1px solid #E8E9E8;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+}
+
+.sen-fields-panel .btn-revoke-filter {
+    color: #999;
+    margin-left: 4px;
+    font-size: 24px;
+}
+.sen-fields-panel .btn-revoke-filter:hover {
+    color: #AAA;
+}
+
+.sen-fields-panel ul.kw-tags {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.sen-fields-panel li.tag-item {
+    padding: 0 4px;
+    list-style: none;
+    display: inline-block;
+    background-color: #abbac3 !important;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 6px;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+}
+.sen-fields-panel li.tag-item .btn-remove-tag {
+    font-size: 16px;
+}
+.sen-fields-panel li.tag-item .btn-remove-tag:hover {
+    color: #CCC;
+}
+
+.sen-fields-panel .accordion-toggle.collapsed {
+    background-color: #DDD!important;
+}
+
+.sen-fields-panel .head-table-sit table.fields-table>thead>tr>th {
+    border-bottom: 1px solid #E1E1E1;
+    height: 48px;
+    line-height: 48px;
+}
+.sen-fields-panel .head-table-sit{
+    background-color: #F2F2F2;
+}
+table.fields-table .col-class-name {
+    width: 30%;
+}
+table.fields-table .col-field {
+    width: 20%;
+}
+table.fields-table .col-handle-type {
+    width: 20%;
+}
+table.fields-table .col-mosica {
+    width: 30%;
+}
+
+
+/*表格样式，将来抽出来*/
+.sen-fields-panel table.fields-table>thead>tr{
+    background-color: #F2F2F2;
+}
+.sen-fields-panel table.fields-table>tbody>tr:nth-child(even){
+    background-color: #F9F9F9;
+}
+
+.sen-fields-panel table.fields-table>thead>tr>th,
+.sen-fields-panel table.fields-table>tbody>tr>td {
+    border-bottom: 1px solid #E1E1E1;
+    height: 32px;
+    line-height: 32px;
+    border-color: #E1E1E1;
+    text-align: left;
+    border-right-width: 1px;
+    border-right-style: solid;
+    padding-left: 8px;
+}
+
+.sen-fields-panel table.fields-table>tbody>tr:last-child>td{
+  border-bottom: none!important;
+}
+.sen-fields-panel table.fields-table>thead>tr>th:last-child,
+.sen-fields-panel table.fields-table>tbody>tr>td:last-child {
+  border-right: none!important;
+}
+
+.sen-fields-panel table.fields-table>tbody>tr:hover,
+.sen-fields-panel table.fields-table>tbody>tr.hover,
+.sen-fields-panel table.fields-table>tbody>tr:focus,
+.sen-fields-panel table.fields-table>tbody>tr.focus {
+  background-color: #EFF4F7;
+}
+
+.sen-fields-panel table.fields-table>tbody>tr.changed {
+   background-color: #E4EFC9; 
+}
+
+.sen-fields-panel table.fields-table td.col-mosica {
+    xmin-width: 220px;
+}
+
+.xxxsen-fields-panel table.fields-table>tbody>tr:active,
+.xxxsen-fields-panel table.fields-table>tbody>tr.active {
+  background-color: #E4EFC9;
+}

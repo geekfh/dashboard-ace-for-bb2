@@ -1,0 +1,523 @@
+/*费率模型 计费方案列表*/
+
+.disc-table ul,
+.scheme-list ul {
+    margin: 0;
+}
+
+.disc-table li,
+.scheme-list li {
+    list-style-type: none;
+}
+.disc-table .model-table td,
+.scheme-list .scheme-container td {
+    vertical-align: middle;
+}
+
+.disc-table table.model-table tr:hover td {
+    background-color: #F2F6F9;
+}
+.disc-table table.model-table tbody:hover td.rowspan {
+    background-color: #F2F6F9;
+}
+
+.disc-table .title-section {
+    line-height: 30px;
+    height: 30px;
+    border-top: 1px dotted #e8e8e8;
+}
+
+.disc-table .disc-title {
+    margin-right: 5px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #0f9fcf;
+}
+
+.disc-table .disc-title.text-red {
+    color: #DD5A43;
+}
+
+
+.disc-table .can-add-more {
+    position: relative;
+    top: 2px;
+    font-size: 25px;
+    color: #428bca;
+    cursor: pointer;
+}
+
+.disc-table .rowspan.col-profit-range,
+.disc-table .rowspan.col-profit-ratio {
+    border-left: 1px solid #DDD;
+}
+.disc-table .rowspan.col-profit-ratio {
+    border-right: 1px solid #DDD;
+}
+
+.disc-table .operation-container .delete {
+    margin-left: 5px;
+    color: #DD5A43;
+}
+
+/*商户费率模型 编辑收费方案*/
+.add-scheme-form {
+
+}
+
+.add-scheme-form .amount-container {
+    width: 20%;
+}
+
+.add-scheme-form .cardType-container {
+
+}
+
+.add-scheme-form .flag-container {
+    width: 8%;
+}
+
+.add-scheme-form .fee-value-container {
+    
+}
+
+.add-scheme-form .fee-container {
+    width: 34%;
+}
+
+.add-scheme-form .operation-container {
+    width: 4%;
+}
+
+
+
+.add-scheme-form .floor-amount-wrapper,
+.add-scheme-form .upper-amount-wrapper,
+.add-scheme-form .min-fee-wrapper,
+.add-scheme-form .max-fee-wrapper,
+.add-scheme-form .fee-value-wrapper {
+    display: inline-block;
+}
+
+.add-scheme-form .floor-amount-wrapper,
+.add-scheme-form .upper-amount-wrapper {
+    width: 43%;
+}
+
+.add-scheme-form .min-fee-wrapper,
+.add-scheme-form .max-fee-wrapper {
+    width: 30%;
+}
+
+.add-scheme-form .max-fee-wrapper {
+    position: relative;
+}
+
+.add-scheme-form .fee-value-wrapper {
+    width: 49%;
+    position: relative;
+}
+
+.add-scheme-form input {
+    width: 100%;
+}
+
+.add-scheme-form label.error {
+    position: absolute;
+}
+
+/*设置分润*/
+.unite-ratio-section {
+    border-top: 1px solid #999;
+    padding-top: 5px;
+}
+
+/*设置分润 title*/
+
+.set-unite-ratio .title {
+    padding-left: 40px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.set-unite-ratio .title span {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/*设置分润 增加按钮*/
+.set-unite-ratio .btn-add,
+.base-ratio-section .btn-add {
+    position: relative;
+    top: 3px;
+}
+
+
+.set-unite-ratio .unite-ratio-title,
+.set-unite-ratio .unite-ratio-container {
+    margin: 0 5%;
+    text-align: center;
+}
+
+
+
+.set-unite-ratio .unite-ratio-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.set-unite-ratio .unite-ratio-container .list {
+    height: 45px;
+    line-height: 30px;
+    margin: 15px 0;
+    padding: 5px 8px 5px 5px;
+    border: 1px solid #797979;
+}
+
+.set-unite-ratio .unite-ratio-container .order {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 44px;
+    line-height: 38px;
+    width: 30px;
+    background: #428bca;
+}
+
+
+.set-unite-ratio .min-trade,
+.set-unite-ratio .max-trade {
+    max-width: 150px;
+    width: 100%;
+}
+.set-unite-ratio .profit-ratio {
+    max-width: 50px;
+}
+
+
+.set-unite-ratio .btn-delete,
+.base-ratio-section .btn-delete {
+    float: right;
+    font-size: 25px;
+    color: #D0021B;
+    cursor: pointer;
+}
+
+.set-unite-ratio .btn-add,
+.base-ratio-section .btn-add {
+    font-size: 25px;
+    color: #428bca;
+    cursor: pointer;
+}
+
+
+/*分润 错误提示*/
+.set-unite-ratio .min-trade-wrapper,
+.set-unite-ratio .max-trade-wrapper {
+    display: inline-block;
+    width: 40%;
+}
+
+.set-unite-ratio .profit-ratio-wrapper {
+    display: inline-block;
+
+}
+
+.set-unite-ratio label.error {
+    font-size: 10px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+
+/*结算扣率/封顶设置*/
+
+.base-ratio-section .title {
+    padding-left: 40px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.base-ratio-section .title span {
+    margin-right: 5px;
+}
+
+.base-ratio-section .base-ratio-title,
+.base-ratio-section .base-fixed-title,
+.base-ratio-section .base-ratio-container,
+.base-ratio-section .base-ratio-content,
+.sign-ratio-section .sign-ratio-title,
+.sign-ratio-section .sign-ratio-content {
+    margin: 0 5%;
+    height: 45px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.base-ratio-section .base-ratio-container,
+.base-ratio-section .base-fixed-title,
+.base-ratio-section .base-ratio-title {
+    /*margin: 0 5%;*/
+    height: 30px;
+    font-size: 12px;
+}
+
+.base-ratio-section .base-ratio-content {
+    border: 1px solid #797979;
+    padding: 5px;
+}
+
+.base-ratio-section label.error {
+    font-size: 10px;
+    line-height: 14px;
+    position: absolute;
+}
+
+.base-ratio-section .min-trade-wrapper,
+.base-ratio-section .max-trade-wrapper {
+    display: inline-block;
+    width: 40%;
+}
+
+.base-ratio-section .base-ratio-wrapper,
+.base-ratio-section .max-fee-wrapper {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+}
+
+
+
+.base-ratio-section .min-trade,
+.base-ratio-section .max-trade {
+    /*max-width: 100px;*/
+    width: 100%;
+}
+
+.base-ratio-section .base-ratio,
+.base-ratio-section .max-fee {
+    width: 100%;
+    max-width: 100px;
+}
+
+/*签约扣率/封顶范围*/
+
+.sign-ratio-section {
+    margin-bottom: 20px;
+}
+
+.sign-ratio-section .title {
+    padding-left: 40px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.sign-ratio-section .min-borm-wrapper,
+.sign-ratio-section .max-borm-wrapper,
+.sign-ratio-section .max-top-wrapper,
+.sign-ratio-section .min-top-wrapper {
+    display: inline-block;
+    width: 40%;
+}
+.sign-ratio-section .sign-ratio-content {
+    border: 1px solid #797979;
+    padding: 5px;
+}
+
+.sign-ratio-section .sign-ratio-content input{
+    width: 100%;
+}
+
+.sign-ratio-section label.error {
+    font-size: 10px;
+    position: absolute;
+}
+
+/*结算扣率/封顶设置 可添加多个时的样式*/
+
+.base-ratio-section {
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    padding-bottom: 22px;
+    overflow: hidden;
+}
+
+.base-ratio-section .base-ratio-container .list {
+    height: 45px;
+    line-height: 30px;
+    margin: 15px 0;
+    padding: 5px;
+    border: 1px solid #797979;
+}
+
+.base-ratio-section .base-ratio-container .order {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 44px;
+    line-height: 38px;
+    width: 30px;
+    background: #428bca;
+}
+
+
+/*商户费率模型 收费方案列表*/
+.scheme-list .title {
+    height: 30px;
+    padding-left: 8px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #0f9fcf;
+}
+
+.scheme-list .title .addItem {
+    cursor: pointer;
+    color: #478FCA;
+}
+/*商户费率模型 编辑收费方案*/
+.add-scheme-form .title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.add-scheme-form .title span {
+    margin-right: 5px;
+}
+.add-scheme-form .title i {
+    position: relative;
+    top: 3px;
+    font-size: 25px;
+    color: #478FCA;
+    cursor: pointer;
+}
+
+.add-scheme-form .scheme-list-title,
+.add-scheme-form .add-scheme-container {
+    margin: 0 2%;
+    text-align: center;
+}
+
+.add-scheme-form .scheme-list-title {
+    height: 25px;
+    padding-top: 3px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.add-scheme-form .scheme-list-title .range-hint {
+    font-size: 15px;
+}
+
+.add-scheme-form .add-scheme-container .list {
+    min-height: 45px;
+    line-height: 30px;
+    padding: 5px;
+    border: 1px solid #797979;
+    margin: 16px 0;
+    padding-top: 25px;
+}
+
+.add-scheme-container div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.add-scheme-form .btn-delete {
+    font-size: 25px;
+    color: #D0021B;
+    cursor: pointer;
+}
+
+/*机构分润方案*/
+
+.standard-treaty-section {
+    overflow: hidden;
+    border-top: 1px solid #999;
+
+}
+
+.standard-treaty-section .title {
+    line-height: 30px;
+    height: 30px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #079bcd;
+}
+
+.standard-treaty-section li {
+    list-style-type: none;
+}
+
+.standard-treaty-section input {
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+}
+
+.standard-treaty-section .type {
+    margin-left: 5px;
+}
+
+.standard-treaty-section ul {
+    height: 114px;
+    overflow: auto;
+}
+
+.standard-treaty-section .standard-tip,
+.standard-treaty-section .treaty-tip {
+    padding-left: 8px;
+    color: #DD5A43;
+}
+
+.standard-section {
+    float: left;
+    width: 45%;
+    margin: 10px 2%;
+    border: 1px solid #999;
+}
+
+.treaty-section {
+    float: right;
+    width: 45%;
+    margin: 10px 2%;
+    border: 1px solid #999;
+}
+
+/**
+ * 费率模型 模型名称长度提示 暂时隐藏
+ */
+
+.add-model-form .length-tip,
+.EditTable .length-tip,
+.edit-model-form .length-tip {
+    display: none;
+    font-size: 10px;
+    color: #f00;
+    padding-left: 5px;
+}
+
+
+.add-model-form .model-brh,
+.add-model-form .trans-type,
+.add-model-form .model-flag,
+.add-model-form .mcht-grp {
+    min-width: 100px;
+}
+
+
+/**
+ * 商户费率模型 新增计费方案 范围提示
+ */
+.max-fee-tip,
+.fee-value-tip {
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: -28px;
+}

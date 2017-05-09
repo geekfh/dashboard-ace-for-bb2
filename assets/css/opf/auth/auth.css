@@ -1,0 +1,830 @@
+.icon-auth-remove {
+	position: absolute;
+	right: 10px;
+	font-size: 18px;
+	color: red;
+}
+
+.icon-auth-remove:hover{
+	font-size: 21px;
+	right: 8px;
+}
+
+.auth-section {
+    padding-left: 10%;
+    overflow-y: auto;
+}
+
+
+/*编辑记录`拥有的权限`label`*/
+.own-auth-caption{
+    margin-left: -18px;
+}
+
+/*添加权限按钮*/
+.icon-to-add-auth {
+    position: absolute;
+    color: green;
+    font-size: 18px;
+    left: 100px;
+    cursor: pointer;
+}
+.icon-to-add-auth:hover{
+    font-size: 20px;
+}
+
+/*权限树按钮*/
+.tree .tree-folder .icon-minus,
+.tree .tree-folder .icon-plus,
+.tree .tree-folder .icon-auth-remove {
+    cursor: pointer;
+}
+
+
+/*TODO : dialog tmp hack to cover jqgrid forzm */
+.ui-front {
+ z-index: 2000!important;
+}
+
+.xui-front{
+    z-index:1999!important; 
+}
+/*规则表*/
+@media (min-width: 480px) {
+    .rule-type-edit-row .org-tree ,
+    .rule-type-edit-row .opr-tree {
+    }
+}
+
+.rule-type-edit-row .jstree-wholerow-ul{
+    width: 100%;
+}
+
+.rule-type-edit-row .jstree-anchor {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jstree-default .jstree-wholerow-clicked{
+    filter:none!important;
+}
+
+.auth-img-group {
+    position: relative;
+    width: 100%;
+    margin-left: 5px;
+}
+
+/*.auth-img-group .inner-wrap {
+    position: relative;
+    width: 100%;
+    margin-left: 5px;
+}*/
+
+.auth-img-group .inner-wrap:hover .btn-panel {
+    display: block;
+}
+
+.auth-img-group .inner-wrap .btn-panel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 27px;
+    width: 100%;
+    padding: 0 5px;
+    text-align: right;
+    font-size: 20px;
+    background: #666;
+    display: none;
+    z-index: 200;
+    opacity: 0.7;
+}
+
+.auth-img-group .btn-panel i {
+    color: white;
+    cursor: pointer;
+}
+
+.auth-img-group .img-align-wrap {
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.auth-img-group .img-align-wrap img {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.auth-img-group .inner-wrap .uploading-img {
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+
+/*机构录入*/
+.add-brh-wrap .wizard-head{
+    color: #1F77B7;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #E2E2E2;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.add-brh-wrap .tab-content {
+    min-height: 500px;
+}
+
+.add-brh-wrap .info-section {
+    margin-bottom: 32px;
+}
+
+.add-brh-wrap .wizard-panel {
+    position: relative;
+    max-width: 960px;
+    margin: 75px auto 0 auto;
+}
+
+.add-brh-wrap .next-relative{
+    margin-bottom: 8px!important;
+}
+
+.add-brh-wrap .input-wrap{
+    padding-left: 0px!important;
+    padding-right: 8px!important;
+}
+
+.add-brh-wrap .input-wrap .checkbox-label {
+    margin-top: 4px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.add-brh-wrap .input-wrap .checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-right: 6px;
+}
+
+.status-confirm .wizard-panel {
+    max-width: 1700px;
+}
+
+.brh-add-confirm .group-margintop {
+    margin-top: 20px;
+}
+
+.add-brh-wrap .brh-add-info {
+    margin-top: 12px;
+}
+
+.add-brh-wrap .brh-add-info .absolute{
+    position: absolute;
+}
+
+.add-brh-wrap .brh-add-info .dec-label {
+    color: #999;
+    padding-left: 0!important;
+}
+
+.add-brh-wrap .form-group > label[class*="col-"]{
+    font-size: 16px!important;
+}
+
+.add-brh-wrap .brh-add-info .btn-upload {
+    width: 100px;
+    height: 36px;
+    background: #428BCA;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    line-height: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-brh-wrap .brh-add-info .inline-position {
+    display: inline;
+}
+
+.add-brh-wrap .brh-add-info .add-img-tirgger{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.add-brh-wrap .brh-add-info .tel-wrap label{
+    /*margin-left: 60px;*/
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.add-brh-wrap .toggle-label {
+    color: #999;
+}
+
+.add-brh-wrap .brh-add-info .tel-wrap input[name="brhTel-pre"] {
+    width: 50px;
+}
+
+.add-brh-wrap .brh-add-info .tel-wrap input[name="brhTel-after"] {
+    /*margin-left: 75px;*/
+    width: 130px;
+}
+
+.add-brh-wrap .brh-add-info .delegate-fieldset input[name="isJoinProfit"] {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 5px;
+}
+
+.add-brh-wrap .brh-add-info .twitter-typeahead {
+    width: 100%!important;
+}
+
+.add-brh-wrap .bottom {
+    margin-top: 20px;
+}
+
+.add-brh-wrap .imgs-preview {
+    padding: 0!important;
+}
+
+.add-brh-wrap .img-wrap {
+    width: 185!important;
+    height: 160px!important;
+}
+
+.add-brh-wrap .top {
+    position: relative;
+    height: 80px;
+    line-height: 60px;
+}
+
+.add-brh-wrap .top .wizard-caption {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-brh-wrap .upload-form .help-error {
+    display: none!important;
+}
+
+.add-brh-wrap .send-success,
+.add-brh-wrap .send-error {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.add-brh-wrap .send-success label {
+    margin-left: 5px;
+}
+
+.add-brh-wrap .send-error label {
+    margin-left: 5px;
+    color: red;
+}
+
+
+/*机构审核*/
+.brh-task,
+.brh-show{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/*机构查看*/
+
+.brh-detail-view-pad-layer {
+    padding: 20px 0;
+}
+.brh-detail-dialog  .opf-widget-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 480px){
+    .brh-detail-view-pad-layer {
+        padding: 0;
+    }
+}
+
+.show-brh-dialog.show-dialog-container .show-dialog{
+    margin-top: 100px!important;
+    width: 100%;
+}
+
+.show-brh-dialog.show-dialog-container .dialog-content{
+    /*overflow: hidden;*/
+    max-height: 600px;
+}
+
+.upload-group .file-info {
+    font-size: 16px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+}
+
+.upload-group .file-link {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.upload-group .btn-upload-file {
+    position: relative;
+    background: #428BCA;
+    font-size: 16px;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-info .file-name {
+    font-size: 16px;
+    margin-right: 24px;
+    margin-left: 10px;
+}
+
+.file-info .delete-file {
+    color: #dd5a43;
+}
+
+.file-info .check-file {
+    color: #428bca;
+}
+
+.brh-form-group .form-section {
+    margin-bottom: 20px;
+}
+
+.brh-form-group .item-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.brh-form-group .caption {
+    font-size: 16px;
+    color: #0E5F9A;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E3ECF5;
+}
+
+.brh-form-group .row-margintop {
+    margin-top: 6px!important;
+}
+
+.brh-form-group .row-text-font {
+    font-size: 14px!important;
+}
+
+.brh-form-group .info-item-text {
+    color: #999;
+    text-align: right;
+}
+
+.brh-form-group .disc-type {
+    white-space: nowrap;
+}
+
+/*操作员查看*/
+
+.user-detail-view-pad-layer {
+    padding: 20px 0;
+}
+.user-detail-dialog  .opf-widget-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 480px){
+    .user-detail-view-pad-layer {
+        padding: 0;
+    }
+}
+
+/*新增操作员*/
+.add-user-wrap.status-info .wizard-panel {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.add-user-wrap.status-info .control-label {
+    font-size: 16px;
+}
+
+.add-user-wrap.status-confirm .wizard-panel {
+    max-width: 1200px;
+    margin: 75px auto 0 auto;
+}
+
+.add-user-wrap .wizard-head{
+    color: #1F77B7;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #E2E2E2;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.add-user-wrap .top {
+    position: relative;
+    height: 80px;
+    line-height: 60px;
+}
+
+.add-user-wrap .top .wizard-caption {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-user-wrap .bottom {
+    margin-top: 20px;
+}
+
+.add-user-wrap .user-type-select {
+    margin-bottom: 20px;
+}
+
+.add-user-wrap .btn-switch {
+    color: #333;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: inherit;
+    border-color: #E8E9E8;
+    height: 40px;
+    padding: 0 23px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.add-user-wrap .btn-switch .text {
+    float: left;
+    line-height: 40px;
+    font-size: 20px;
+}
+.add-user-wrap .btn-switch .icon {
+    line-height: 45px;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.add-user-wrap .dropdown-menu > li > a {
+    font-size: 16px!important;
+}
+
+.add-user-wrap .add-img {
+    position: relative;
+    height: 35px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.add-user-wrap .send-success,
+.add-user-wrap .send-error {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.add-user-wrap .send-success label {
+    margin-left: 5px;
+}
+
+.add-user-wrap .send-error label {
+    margin-left: 5px;
+    color: red;
+}
+
+.add-user-wrap .upload-form .uploader-file-input {
+    width: auto!important;
+}
+
+.user-form-section {
+    margin-bottom: 20px;
+}
+
+.user-form-section .caption {
+    font-size: 16px;
+    color: #0E5F9A;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E3ECF5;
+}
+
+.user-form-section .row-margintop {
+    margin-top: 12px;
+}
+
+.user-form-section .group-margintop {
+    margin-bottom: 20px;
+}
+
+
+.user-form-section .value {
+    font-size: 14px;
+}
+
+.user-form-section .img-wrap {
+    display: inline-block;
+    width: 140px!important;
+    height: 100px!important;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.user-form-section .img-wrap .img-label {
+    text-align: center;
+    line-height: 25px;
+}
+
+.user-form-section .img-wrap img {
+    width: 130px;
+    height: 100px;
+}
+
+.user-form-section .info-item-text {
+    color: #999;
+    text-align: right;
+    max-width: 150px;
+}
+
+
+/*查看操作员*/
+.show-user-dialog.show-dialog-container .show-dialog{
+    margin-top: 100px!important;
+    width: 100%;
+}
+
+
+/*操作员审核*/
+
+.user-show,
+.user-perform {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.user-perform .caption {
+    color: #3E72BB;
+}
+
+.user-form-group {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding: 12px;
+}
+
+.user-form-group .item-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.user-form-group .caption {
+    font-size: 16px;
+    color: #0E5F9A;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E3ECF5;
+
+}
+
+.user-form-group .row-margintop {
+    margin-top: 6px!important;
+}
+
+.user-form-group .row-text-font {
+    font-size: 14px!important;
+}
+
+.user-form-group .row-text-font:hover {
+    background: #ddd;
+}
+
+
+/*操作员修订*/
+.user-add-info img.has-revise-error {
+    border: 2px solid red;
+}
+
+
+/*将新增机构添加到自定义规则*/
+.add-to-rule-panel table {
+    width: 100%;
+}
+
+.add-to-rule-panel tr:hover{
+  background-color: #F2F6F9;
+}
+.add-to-rule-panel tr{
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+}
+.add-to-rule-panel td{
+    vertical-align: middle;
+}
+.add-to-rule-panel td > label, label.inline {
+    margin-bottom: 5px;
+}
+.add-to-rule-panel td.col-checkbox{
+    width: 20px;
+}
+.add-to-rule-panel td.col-name{
+    padding-left: 4px;
+}
+.add-to-rule-panel .option-panel-sit{
+    /*padding: 0 16px;*/
+}
+@media screen and (min-width: 768px) {
+    .add-to-rule-panel .modal-dialog {
+        width: 500px;
+    }
+}
+.rule-detail-view .modal-dialog{
+    max-width: 400px;
+}
+.rule-detail-view .modal-dialog .modal-body table{
+    width: 100%;
+}
+.rule-detail-view .modal-dialog .modal-body table td {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.rule-detail-view .modal-dialog .modal-body table .col-label{
+    width: 40px;
+}
+.rule-detail-view .modal-dialog .modal-body table .col-text{
+    text-align: left;
+}
+.rule-detail-view .rule-elem-panel {
+    margin-top: 10px;
+}
+.rule-detail-view .rule-elem-panel .org-list{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.rule-detail-view .rule-elem-panel .operator-list{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.rule-detail-view .rule-elem-panel li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    list-style: none;
+}
+.rule-detail-view .rule-elem-panel ul {
+    padding-right: 8px;
+    max-height: 250px;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+.role-select-panel .selected-panel {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.role-select-panel .selected-panel .selected-list {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid #aaa;
+    overflow: auto;
+    background-color: #fff;
+    height: 303px;
+}
+
+.role-select-panel .selected-panel .selected-list li {
+    float: left;
+    list-style: none;
+    
+}
+
+.role-select-panel .selected-panel .selected-list .searched-choice {
+    padding: 3px 5px 3px 18px;
+    margin: 3px 0 3px 5px;
+    position: relative;
+    line-height: 13px;
+    color: #333;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    background-color: #e4e4e4;
+}
+
+.role-select-panel .selected-panel .selected-list .searched-choice .select2-search-choice-close {
+    right: auto;
+    left: 3px;
+}
+
+.role-select-panel .options-panel {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.role-select-panel .options-panel .roles-list {
+    position: relative;
+    border: 1px solid #aaa;
+}
+
+.role-select-panel .options-panel .roles-list .search-input {
+    padding-left: 25px;
+    width: 100%;
+}
+
+.role-select-panel .options-panel .roles-list .search-roles-icon {
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.role-select-panel .options-panel .roles-list  .remove-roles-icon {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    color: #aaa;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.role-select-panel .options-panel .options-list {
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-top: 1px solid #aaa;
+    overflow: auto;
+    background-color: #fff;
+    max-height: 270px;
+    /*min-height: 20px;*/
+}
+
+
+.role-select-panel .options-panel .options-list li {
+    list-style: none;
+}
+
+.role-select-panel .options-panel .options-list .add-item {
+    padding: 3px 10px;
+}
+
+.role-select-panel .options-panel .options-list .add-item:hover {
+    background: #3875d7;
+    color: white;
+    cursor: pointer;
+}
+
+.role-select-panel .role-head {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.role-select-panel .selected-panel .has-error {
+    border-color: red !important;
+}
+
+.role-select-panel .selected-panel .error-msg-role {
+    color: #d16e6c !important;
+    font-weight: normal;
+    font-size: 14px;
+}

@@ -1,0 +1,53 @@
+define(['jquery.validate'], function(){
+	
+	jQuery.extend(jQuery.validator.messages, {
+		required: "此字段必需填写",
+		remote: "内容输入错误！",
+		email: "E-mail格式错误",
+		url: "网址格式错误",
+		date: "日期格式错误",
+		dateISO: "日期格式错误",
+		number: "请输入有效数字",
+		digits: "请输入零或正整数！",
+		creditcard: "信用卡号格式错误",
+		equalTo: "两次输入不一致",
+		accept: "请输入拥有合法后缀名的字符串！",
+		maxlength: jQuery.validator.format("长度不能大于{0}！"),
+		minlength: jQuery.validator.format("长度不能小于{0}！"),
+		rangelength: jQuery.validator.format("长度只允许在{0}-{1}之间！"),
+		range: jQuery.validator.format("数值只允许在{0}-{1}之间！"),
+		max: jQuery.validator.format("数值不允许大于{0}！"),
+		min: jQuery.validator.format("数值不允许小于{0}！"),
+		integer: "请输入合法的整数！",
+		positive: "请输入合法的正数！",
+		positiveInteger: "请输入合法的正整数！",
+		mobile: "手机号码格式错误",
+		phone: "电话号码格式错误",
+		zipCode: "邮政编码格式错误",
+		requiredTo: "此内容为必填项,请输入！",
+		username: "只允许包含中文、英文、数字和下划线！",
+		prefix: "请输入以 {0} 开头的字符串！",
+		lettersonly: "只允许包含字母！",
+
+		mchtMobileDuplicateCheck: '该手机号码已经被使用',
+		mchtPersonIdDuplicateCheck: '该身份证号已经被使用',
+		mchtlicNoDuplicateCheck: '该营业执照号已经被使用',
+		mchtUserEmailDuplicateCheck: '该电子邮箱已经被使用',
+		//mchtUserKindSuffixCheck: '该后缀已经被使用',
+		//mchtUserLoginCheck: '该账号已经被使用',
+		brhNameDuplicateCheck: '该机构名称已经被使用',
+		brhlicNoDuplicateCheck: '该营业执照号已经被使用',
+		checkGroupNameRepeat: '该角色组名称已经被使用',
+		
+		checkMobileRepeat: '该手机号码已经被使用',
+		checkPhoneRepeat: '该手机号码已经被使用',
+		checkEmailRepeat: '该电子邮箱已经被使用',
+		checkLoginRepeat: '该登录名已经被使用',
+		checkZbankNoRepeat: '该银行卡号已经被使用',
+		checkIdCardRepeat: '该身份证号已经被使用',
+		checkIdCardRepeat4User: '该身份证号已经被使用',
+		checkCreditCard:'只支持借记卡！',
+		checkVerifyCodeValid:'验证码有误！'
+	});
+
+});

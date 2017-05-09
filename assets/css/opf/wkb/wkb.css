@@ -1,0 +1,949 @@
+/*分页栏*/
+.tasks-board .pager {
+    margin: 0;
+}
+.tasks-board .pager .page-info {
+    margin: 10px 0;
+}
+.tasks-board .pager .zero-occupy{
+    display: none;
+}
+.tasks-board .pager span.num{
+    border: none;
+    padding: 0 4px;
+    font-size: 14px;
+}
+.tasks-board .pager .page-btn a{
+    float: none;
+    margin: 0 4px;
+}
+
+.tasks-board {
+    position: relative;
+}
+.tasks-board .header-bar {
+    /*border-bottom: 1px solid #E4E4E5;*/
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.tasks-board .header-bar .inner-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.tasks-board .task-btn-wrap {
+    float: left;
+}
+.tasks-board .task-btn-wrap .task-amount {
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+}
+
+.tasks-board .btn-get-task {
+    top: 5px;
+    z-index: 2;
+/*    position: absolute;
+    float: left;*/
+    font-weight: bold;
+    font-size: 15px;
+    bottom: 0;
+}
+
+.tasks-board .refresh-btn {
+    font-size: 16px;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+
+.tasks-board.state-search .dropdown-switch,
+.tasks-board.state-search .btn-get-task {
+    display: none;
+}
+
+/*ace 覆盖了 .btn  .btn-default 恶心 暂时拷贝bootstrap的样式*/
+.tasks-board .btn-switch{
+    color: #333;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background-color: inherit;
+    background-color: white\0;
+    border-color: #E8E9E8;
+    
+    height: 50px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.tasks-board .btn-switch .icon {
+    font-size: 30px;
+    top: 2px;
+    position: relative;
+    left: 2px;
+}
+
+.tasks-board .btn-switch .text {
+    font-weight: bold;
+    font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+    .tasks-board .btn-switch{
+        padding: 0 15px;
+    }
+    .tasks-board .btn-switch .text {
+        font-size: 20px;
+    }
+    .tasks-board .search-wrap {
+        /*position: relative!important;*/
+    }
+    .center-wrap .caption{
+        font-size: 18px!important;
+        width: 125px;
+        margin-bottom: 20px;
+    }
+    .show-task .takeback,
+    .show-task .not-allow-takeback{
+        margin-top: 10px;
+        float: left!important;
+    }
+    .show-task .not-allow-toolTips {
+        margin-top: 10px!important;
+        margin-left: 100px!important;
+        right: auto!important;
+    }
+    .show-task .not-allow-toolTips .left-arrow {
+        display: block!important;
+    }
+    .show-task .not-allow-toolTips .right-arrow {
+        display: none!important;
+    }
+}
+
+.tasks-board .dropdown-switch{
+    display: inline-block;
+    float: left;
+/*    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;*/
+}
+.tasks-board ul.dropdown-menu {
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+}
+
+/*>>>　depreate*/
+.tasks-board .search-input-wrap {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: inline-block;
+}
+
+.tasks-board .search-input-wrap input{
+/*    width: 150px;*/
+    height: 32px;
+    padding-left: 24px;
+    padding-right: 6px;
+}
+.tasks-board .search-input-wrap .icon-search{
+    position: absolute;
+    top: 1px;
+/*    bottom: 1px;
+    left: 3px;*/
+    line-height: 28px;
+    display: inline-block;
+    color: rgb(144, 144, 144);
+    font-size: 16px;
+}
+/*<<<　depreate*/
+
+/*搜索框*/
+.tasks-board .search-wrap .search-wrap-input {
+    border: 1px solid #d5d5d5; 
+    height: 32px!important;
+}
+
+.tasks-board .search-wrap .search-wrap-icon {
+    color: #909090!important;
+}
+
+.tasks-board .search-wrap .search-wrap-input{
+    width: 200px;
+}
+.tasks-board .search-wrap{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.tasks-board .search-wrap input {
+    width: 260px;
+}
+/*@media only screen and (max-width: 530px) {
+  .nav-search .nav-search-input {
+    width: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    max-width: 0;
+  }
+  .nav-search:hover .nav-search-input,
+  .nav-search .nav-search-btn:active + .nav-search-input,
+  .nav-search .nav-search-input:focus,
+  .nav-search .nav-search-input:hover,
+  .nav-search .nav-search-input:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    width: 200px;
+    max-width: 200px;
+  }
+  .nav-search .nav-search-icon {
+    border: 1px solid;
+    border-radius: 100%;
+    background-color: #FFF;
+    padding: 0 5px !important;
+  }
+  .nav-search:hover .nav-search-icon,
+  .nav-search .nav-search-input:focus ~ .nav-search-icon,
+  .nav-search .nav-search-input:hover ~ .nav-search-icon,
+  .nav-search .nav-search-input:active ~ .nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px !important;
+  }
+}*/
+
+.tasks-board{}
+
+.tasks-board.state-search .revoke-wrap {
+    display: block;
+}
+
+.tasks-board .revoke-wrap {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.tasks-board .revoke {
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    border: 1px solid #E8E9E8;
+    font-size: 24px;
+    min-width: 200px;
+    padding: 0 8px;
+}
+.tasks-board .revoke i{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    top: -4px;
+}
+.tasks-board .revoke  i {
+    font-size: 18px;
+}
+.tasks-board .revoke  i:hover {
+    font-size: 22px;
+}
+.tasks-board .revoke .kw {
+    font-weight: bold;
+}
+
+.tasks-board .ct {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.tasks-board .list {
+    position: relative;
+    border-left: 1px solid #E8E9E8;
+}
+
+.task-row {
+    /*不知道为什么第一行跟第二行之间有个很大的空白，暂时设置height来hack，本身是想用padding的实现显示高度*/
+    border-bottom: 1px solid #E8E9E8;
+    line-height: 1.6em;
+}
+
+.task-row .time {
+    width: 130px;
+}
+
+.tasks-board .list .task-row:nth-child(odd) {
+    background: #F9F9F9;
+    text-decoration: none;
+}
+
+.task-row .cell {
+    padding: 15px 5px;
+    border-right: 1px solid #E8E9E8;
+}
+
+/*.task-row .type-0 {
+    background: #82AF6F;
+}
+.task-row .type-1 {
+    background: #F89406;
+}
+.task-row .type-2 {
+    background: #D15B47;
+}*/
+
+
+/*审核页面*/
+.center-wrap {
+    text-align: center;
+}
+
+/*各审核意见说明*/
+
+.history-wrapper.taskDetails .desc{
+    color: #999;
+}
+
+/*查看历史任务*/
+.history-view{
+    text-align: left;
+    margin-left: -250px;
+}
+
+.history-wrapper.task-history{
+    border: 1px solid #A6A6A6;
+    max-width: 320px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #999;
+    color: black!important;
+    line-height: 25px;
+}
+
+.history-wrapper.delete-history{
+    position: relative!important;
+    margin: 20px auto auto auto;
+    max-height: 500px;
+    overflow: auto;
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+}
+
+
+.history-wrapper .checkHistoryHead div{
+    float: left;
+}
+
+.history-wrapper .taskInfo span{
+    margin-left: 10px;
+}
+
+.history-wrapper div{
+    font-size: 15px;
+}
+
+.history-wrapper .taskInfo{
+    padding-left: 17%;
+}
+
+.history-wrapper .taskId,.vetical,.taskStep,.status{
+    text-align: center;
+}
+
+.history-wrapper .beginOprName,
+.history-wrapper .expand{
+    margin-bottom: 20px;
+}
+
+.history-wrapper .twoLevelBrhName{
+    margin-top: 20px;
+}
+
+.history-wrapper .checkHistoryHead{
+    height: 30px;
+    margin-top: 10px;
+}
+
+.history-wrapper .checkHistoryHead,
+.history-wrapper .checkPeopleInfo{
+    border-bottom: 1px solid #D4D4D4;
+    padding-left: 15px; 
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.history-wrapper .single-state{
+    width:100%;
+    float: left;
+}
+
+.history-wrapper .taskDetails{
+    height: 30%;
+    max-height: 300px;
+    overflow: auto;
+    margin-bottom: 12px;
+}
+
+
+.history-wrapper .vetical{
+    width: 10%;
+    color:#D4D4D4;
+}
+
+.history-wrapper .taskId,.taskStep{
+    width: 45%;
+}
+
+.history-wrapper .status{
+    margin-bottom: 0;
+    line-height:24px;
+    width: 10%;
+    float: left;
+    text-align: right;
+    padding-left: 5%;
+}
+
+.history-wrapper .arrow {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #FFF;
+    position: absolute;
+    left: 85%;
+    margin-left: -22px;
+    top: -10px;
+    z-index: 1001;
+}
+
+.history-wrapper .opr-name,
+.history-wrapper .desc{
+    float: right;
+    width: 87%;  
+    border-left:2px solid #D4D4D4;
+    min-height: 15px;
+    padding-left: 3%;
+    font-size: 15px;
+}
+
+.history-wrapper .icon-circle{
+    width: 6.5%;
+    float: left;
+    padding-top: 5px;
+    color: #D4D4D4;
+}
+
+/*在谷歌浏览器下针对checkable-text加入的CSS*/
+.chrome .info-board .checkable-text{
+    display: table;
+}
+
+.info-board .check-trigger {
+    border: 1px solid #C8C8C8;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 2px;
+    bottom: 0;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background: #FFF;
+}
+
+.info-board .checkable .icon-ok:before{
+    color: white;
+}
+
+.info-board .checkable .icon-remove.icon-ok:before{
+    color: red;
+}
+
+.info-board .checkable .check-trigger {
+    display: none;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.info-board .checkable:hover .check-trigger,
+.info-board .checkable.checked .check-trigger {
+    display: inline-block!important;
+}
+
+.info-board .img-wrap .check-trigger{
+    top: -10px;
+    left: 9px;
+    position: absolute;
+
+}
+
+.info-board .img-wrap {
+    position: relative;
+    height: 90px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.center-wrap .caption{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.center-wrap>.icon{
+    font-size: 22px;
+    color: #4E89B4;
+    line-height: 40px;
+    margin-left: 4px;
+}
+
+.brh-show{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.brh-show .info-board{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.perform-task .info-board {
+    display: inline-block;
+}
+
+.show-task .takeback {
+    margin-right: 25px;
+    float: right;
+    display: none;
+}
+
+.show-task .not-allow-takeback {
+    width: 90px;
+    height: 42px;
+    background: #84B4DC;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    padding-left: 16px;
+    cursor: not-allowed;
+    float: right;
+    display: none;
+} 
+
+.show-task .not-allow-toolTips {
+    display: none;
+    width: 50%;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 13px;
+    position: absolute;
+    z-index: 100;
+    right: 110px;
+} 
+
+.show-task .not-allow-toolTips .left-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 11px solid black;
+    left: -10px;
+    display: none;
+    top: 10px;
+}
+
+.show-task .not-allow-toolTips .right-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 11px solid black;
+    right: -10px;
+    display: block;
+    top: 10px;
+}
+
+
+.show-task .show-tooltip-notAllowTake {
+    display: none;
+    border: 1px solid #CECECE;
+    padding: 5px;
+    width: 155px;
+    height: 50px;
+    float: left;
+    background: yellow;
+}
+
+.perform-task .put-back-task,
+.perform-task .reject-trigger{
+    margin-right: 10px;
+}
+
+.perform-task .info-board{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #CECECE;
+    background: #FFF;
+}
+
+.perform-task .right-btns{
+    position: relative;
+}
+
+.perform-task .info-board .checkable{
+    color: #333;
+}
+
+.perform-task .info-board .checkable.checked .text,
+.perform-task .info-board .checkable:hover .text{
+    color: red;
+}
+.perform-task .info-board .img-wrap.checkable.checked img,
+.perform-task .info-board .img-wrap:hover img{
+    border: 2px solid red;
+}
+
+/*TODO抽出与.history-wrap .arrow相同部分*/
+.perform-task .reject-form-wrapper .arrow {
+    right: 60px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #FFF;
+    position: absolute;
+    z-index: 1001;
+}
+
+.perform-task .reject-form-wrapper .arrow-border {
+    right: 60px;
+    top: -12px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #BBBBBB;
+    position: absolute;
+    z-index: 1000;
+}
+
+.perform-task .reject-form-wrapper {
+    margin-top: 15px;
+    top: 100%;
+    right: 50px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 10px;
+    border: solid 1px #BBBBBB;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #999;
+}
+
+.perform-task .reject-form-wrapper .reject-submit{
+    margin-top: 10px;
+    width: 100%;   
+}
+
+.perform-task .reject-form-wrapper .needAdd{
+    margin-top: 10px;
+}
+.perform-task .reject-form-wrapper .needAdd input{
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+.perform-task .reject-form-wrapper .needAdd div{
+    font-size: 16px;
+    padding-left: 7px;
+    display: inline-block;
+}
+
+.perform-task .check-result {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+/*确认通过的CSS样式*/
+
+.perform-task .pass-form-wrapper .arrow {
+    right: 10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #FFF;
+    position: absolute;
+    z-index: 1001;
+}
+
+.perform-task .pass-form-wrapper .arrow-border {
+    right: 10px;
+    top: -12px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #BBBBBB;
+    position: absolute;
+    z-index: 1000;
+}
+
+.perform-task .pass-form-wrapper {
+    padding: 15px;
+    margin-top: 15px;
+    top: 100%;
+    right: 0px;
+    display: none;
+    border: 1px solid #A6A6A6;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 10px;
+    border: solid 1px #BBBBBB;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #999;
+}
+
+.perform-task .pass-form-wrapper .pass-submit{
+    margin-top: 10px;
+    width: 100%;   
+}
+.perform-task .pass-form-wrapper .comment{
+    margin-top: 10px;
+}
+/*确认通过的CSS样式 */
+
+
+
+
+
+
+.perform-task .zbank-input {
+    width: 100%;
+}
+
+.perform-task .twitter-typeahead {
+    width: 100%;
+}
+
+.zbankName-row select {
+    width: 100%;
+}
+
+.show-task .center-wrap{
+    /*width: auto;*/
+}
+
+.wkb-status-style {
+    cursor:pointer;
+}
+
+.wkb-status-style:hover {
+    background-color: #f1f8fd !important;
+}
+
+.task-row-head {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid #E8E9E8;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.edit-add-person{
+    cursor: pointer;
+}
+
+.edit-add-person label{
+    padding-left: 4px;
+    cursor: pointer;
+    color: #4C8FBD;
+}
+
+.pre-check-result span.label{
+    height: 25px;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+.pre-check-result i {
+    margin-right: 5px;
+}
+
+/*为了让inout.disabled在苹果上能看到，字体置为粗体*/
+.form-group input[disabled],
+.form-group input:disabled {
+    color: black!important;
+}
+
+/*审核时的提示信息*/
+.perform-task .hint-color {
+    background: #ffb751;
+    color: white !important;
+    width: 180px;
+    margin-left: 12px;
+}
+
+.perform-task .update-bank {
+    font-weight: bold;
+    color: #498fc5 !important;
+    cursor: pointer !important;
+}
+
+.perform-task .warm-message {
+    color: #aaa;
+}
+
+/*审核银行卡号信息外层div样式*/
+.certification-task,
+.T0-task,
+.bankno-task {
+    max-width: 640px;
+    margin: auto;
+}
+
+/*审核流程样式（详情界面，审核界面公用样式）*/
+.common-task .caption {
+    display: inline-block;
+    color: #3E72BB;
+}
+
+.common-task .info-board{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #CECECE;
+    background: #FFF;
+}
+
+.common-task .btn-groups {
+    width: 100%;
+}
+
+.common-task .task-group {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding: 12px;
+}
+
+.common-task .task-group .form-section {
+    margin-bottom: 20px;
+}
+
+.common-task .task-group .item-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.common-task .task-group .caption {
+    font-size: 16px;
+    color: #0E5F9A;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E3ECF5;
+}
+
+.common-task .task-group .bank-img-wrap {
+    width: 150px;
+    height: 105px;
+    margin-top: 20px;
+}
+
+.common-task .task-group .row-margintop {
+    margin-top: 6px!important;
+}
+
+.common-task .task-group .row-text-font {
+    font-size: 14px!important;
+}
+
+.common-task .task-group .info-item-text {
+    color: #999;
+    text-align: right;
+    max-width: 130px;
+}
+
+.common-task .task-group .bank-logo-place {
+    display: inline-block;
+}
+
+.common-task .task-group .bank-logo-place label {
+    margin-top: 5px;
+    color: black!important;
+}
+
+.common-task .task-group .edit-zbank-form .edit-zbank-label {
+    text-align: right;
+}
+
+.common-task .task-group .edit-zbank-form .js-cancel-update-zbank {
+    margin-left: 20px;
+}
+
+.common-task .task-group .images-wrap {
+    padding: 0!important;
+    margin-left: -11px;
+}
+
+.common-task .task-group .images-wrap .img-name {
+    text-align: center;
+}
+
+/*修改支行名样式*/
+.edit-zbank .region-wrap select {
+    width: 30%;
+    margin: 0 2px;
+}
+
+i.icon-wkb-card {
+    width: 50px;
+    height: 20px;
+    margin-left: 0.5em;
+    background: url("images/icon-wkb-card.png") scroll no-repeat 0 0;
+}
+
+.div-wkb-management{
+    display: none;
+    padding-bottom:50px;
+    width: auto;
+}
+
+.wkb-management{
+    float: right;
+}
